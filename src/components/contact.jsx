@@ -37,7 +37,7 @@ export const Contact = (props) => {
   };
   return (
     <div>
-      <div id="contact">
+      {/* <div id="contact">
         <div className="container">
           <div className="col-md-8">
             <div className="row">
@@ -149,7 +149,7 @@ export const Contact = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="footer">
         <div className="container text-center">
           <p>
