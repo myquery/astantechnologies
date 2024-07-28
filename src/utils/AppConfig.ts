@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'React landing page',
-  title: 'React landing page template 2021',
-  description: 'Production ready plug n play landing page!',
+  site_name: 'Astan Technologies Nigeria Limited',
+  title: 'Your Technology partner for business solutions',
+  description: 'Tech Partner',
   locale: 'en',
 };
