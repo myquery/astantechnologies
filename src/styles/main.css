@@ -4,17 +4,18 @@
 
 
 :root {
-  --color-primary: #141694;
-  --color-secondary: #579ee0;
-  --color-tertiaty: #99a0a3;
+  --color-primary: #004aad;
+  --color-secondary: #0066ff;
+  --color-tertiary: #99a0a3;
+  --color-background: #ffffff;
 }
 
 a { 
-  @apply text-blue-700;
+  @apply text-primary;
 }
 
 a:hover {
-  @apply border-b-2 border-blue-700;
+  @apply border-b-2 border-primary;
 }
 
 
