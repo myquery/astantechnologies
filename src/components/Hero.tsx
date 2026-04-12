@@ -1008,10 +1008,6 @@ function Hero() {
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                     Delivery principles
                   </p>
-                  <p className="max-w-2xl text-sm leading-7 text-slate-500">
-                    The foundation stays scalable, operator-friendly, and easy
-                    for teams to absorb after launch.
-                  </p>
                 </div>
                 <div className="mt-5 grid gap-4 lg:grid-cols-3">
                   {deliveryPrinciples.map((principle) => (
@@ -1034,10 +1030,6 @@ function Hero() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                     Delivery lanes
-                  </p>
-                  <p className="max-w-2xl text-sm leading-7 text-slate-500">
-                    The same model adapts across launches, blockchain systems,
-                    and operational platforms without splitting the story apart.
                   </p>
                 </div>
                 <div className="mt-5 grid gap-4 lg:grid-cols-3">
@@ -1071,10 +1063,6 @@ function Hero() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                     Working rhythm
-                  </p>
-                  <p className="max-w-2xl text-sm leading-7 text-slate-500">
-                    Four phases keep discovery, delivery, integration, and team
-                    readiness moving in sync.
                   </p>
                 </div>
                 <div className="mt-5 grid gap-4 xl:grid-cols-4 md:grid-cols-2">
