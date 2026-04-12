@@ -28,7 +28,7 @@
     "title": "Technology Partner ",
     "subtitle": "for your Business Solutions",
     "description": "At Astan, we are your technology partner for comprehensive business solutions. Our expertise spans business automation, integrations, and application development across web, mobile, and desktop platforms. We streamline your operations, enhance productivity, and reduce manual tasks. We specialize in custom ERP system integrations and secure payment gateway integrations, ensuring seamless and efficient financial transactions. By automating routine tasks and connecting complex systems, Astan technologies transforms your business operations, enabling you to focus on growth and innovation.",
-    "img": "/assets/images/bkg.jpg",
+    "img": "/assets/images/hero-image.svg",
     "primaryAction": {
       "text": "Get Quote",
       "href": "#"
@@ -92,12 +92,13 @@
           "Domain Registration/Hosting",
           "App wireframe Design",
           "Web and Mobile Application Development",
-          "3rd party Integrations"
+          "3rd party Integrations",
+          "Shopify Storefront"
         ]
       },
       {
         "name": "Enterprise Integrations",
-        "price": "$15",
+        "price": "Get Quote",
         "priceDetails": "For corporate and government",
 
         "features": [
