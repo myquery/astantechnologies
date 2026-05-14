@@ -624,10 +624,10 @@ function Hero() {
               systems, and internal platforms.
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Astan blends product design, engineering, AI workflow
-              integration, commerce thinking, and technical training into one
-              delivery motion, so customer experiences and the systems behind
-              the scenes evolve together.
+              Astan blends product design, engineering, AI workflow integration,
+              commerce thinking, and technical training into one delivery
+              motion, so customer experiences and the systems behind the scenes
+              evolve together.
             </p>
           </div>
 
@@ -666,9 +666,8 @@ function Hero() {
               </h3>
               <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
                 Instead of treating platforms as abstract capabilities, we ship
-                products that handle storefront operations, payments,
-                household coordination, and cooperative workflows in one
-                working system.
+                products that handle storefront operations, payments, household
+                coordination, and cooperative workflows in one working system.
               </p>
             </div>
 
@@ -1123,7 +1122,7 @@ function Hero() {
                   dev@astantechnologies.com
                 </a>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="outline-button w-full border-white/[0.12] bg-white/5 text-white hover:border-white/20 hover:bg-white/10"
                 >
                   Review service scope
@@ -1131,7 +1130,7 @@ function Hero() {
               </div>
             </div>
 
-            <div className="relative mt-12 flex flex-col gap-5 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <div className="relative mt-12 flex flex-col gap-6 border-t border-white/10 pt-8 lg:flex-row lg:items-center lg:justify-between">
               <div className="flex items-center gap-4">
                 <span className="flex h-14 w-14 items-center justify-center rounded-[1.25rem] border border-white/10 bg-white/10">
                   <img
@@ -1147,11 +1146,33 @@ function Hero() {
                 />
               </div>
 
-              <p className="max-w-2xl text-sm leading-7 text-slate-400">
-                Astan Technologies builds web, mobile, commerce, blockchain,
-                Bitcoin, and enterprise experiences with a product mindset and a
-                rollout plan teams can actually use.
-              </p>
+              <div className="max-w-2xl">
+                <p className="text-sm leading-7 text-slate-400">
+                  Astan Technologies builds web, mobile, commerce, blockchain,
+                  Bitcoin, and enterprise experiences with a product mindset and
+                  a rollout plan teams can actually use.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-slate-300">
+                  <a
+                    href="/privacy-policy/"
+                    className="transition hover:text-white"
+                  >
+                    Privacy Policy
+                  </a>
+                  <a
+                    href="/terms-of-service/"
+                    className="transition hover:text-white"
+                  >
+                    Terms of Service
+                  </a>
+                  <a
+                    href="/user-data-deletion/"
+                    className="transition hover:text-white"
+                  >
+                    User Data Deletion
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

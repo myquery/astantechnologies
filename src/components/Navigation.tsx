@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const navigationItems = [
-  { label: "Services", href: "#services" },
-  { label: "Capabilities", href: "#approach" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Capabilities", href: "/#approach" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navigation() {
@@ -19,7 +19,7 @@ export default function Navigation() {
         <nav className="rounded-[1.75rem] border border-white/10 bg-brand-ink/75 px-4 py-3 shadow-[0_24px_90px_rgba(2,6,23,0.38)] backdrop-blur-xl sm:px-5">
           <div className="flex items-center justify-between gap-4">
             <a
-              href="#top"
+              href="/#top"
               className="flex items-center gap-3"
               aria-label="Astan Technologies home"
               onClick={closeMenu}
@@ -55,7 +55,10 @@ export default function Navigation() {
               >
                 dev@astantechnologies.com
               </a>
-              <a href="#contact" className="primary-button px-5 py-2.5 text-sm">
+              <a
+                href="/#contact"
+                className="primary-button px-5 py-2.5 text-sm"
+              >
                 Start a project
               </a>
             </div>
