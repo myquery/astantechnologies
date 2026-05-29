@@ -2,6 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
+import { blogArticles } from "../data/blogArticles";
+
 type ServiceCard = {
   title: string;
   label: string;
@@ -34,6 +36,11 @@ type HeroSlide = {
   description?: string;
   counter?: string;
   showLogo?: boolean;
+};
+
+type ResearchPillar = {
+  title: string;
+  description: string;
 };
 
 const iconProps = {
@@ -318,6 +325,39 @@ const deliveryPrinciples: DeliveryPrinciple[] = [
 ];
 
 const handoffPhases = ["Plan", "Build", "Launch"];
+
+const tokenizationPillars: ResearchPillar[] = [
+  {
+    title: "Capital access",
+    description:
+      "Tokenized assets can make financing more accessible by turning ownership, yield rights, or project participation into smaller, transferable digital units.",
+  },
+  {
+    title: "Trust and auditability",
+    description:
+      "A well-designed registry can preserve the link between the real asset, the legal claim, the investor record, and every movement that happens after issuance.",
+  },
+  {
+    title: "Programmable compliance",
+    description:
+      "Rules for eligibility, transfer limits, reporting, and settlement can be built into the product instead of being bolted on after the market is live.",
+  },
+];
+
+const tokenizationBuildBlocks = [
+  "Asset registry",
+  "Issuer onboarding",
+  "KYC-aware transfers",
+  "Investor dashboards",
+  "Settlement workflows",
+];
+
+const whatsappServiceCapabilities = [
+  "Tenant-isolated SME workspaces",
+  "Shared support inboxes",
+  "Broadcast and order automations",
+  "Customer follow-up analytics",
+];
 
 function Hero() {
   const [activeCapabilityIndex, setActiveCapabilityIndex] = useState(0);
@@ -978,6 +1018,137 @@ function Hero() {
       </section>
 
       <section
+        id="research"
+        className="scroll-mt-28 bg-white py-24 text-slate-900 sm:py-28"
+      >
+        <div className="section-shell">
+          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+            <div className="max-w-3xl">
+              <span className="eyebrow border-slate-200 bg-brand-paper text-slate-500">
+                Research and SME platforms
+              </span>
+              <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+                Asset tokenization is not just a Web3 feature. It is a new
+                financing interface for real-world assets.
+              </h2>
+            </div>
+
+            <div className="max-w-2xl lg:justify-self-end">
+              <p className="text-lg leading-8 text-slate-600">
+                Astan is researching how asset tokenization can help founders,
+                cooperatives, property owners, and SMEs unlock capital from
+                assets that are difficult to finance through traditional rails.
+                The opportunity is strongest when tokenization improves trust,
+                access, settlement, and compliance at the same time.
+              </p>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="border-l-4 border-primary bg-brand-paper px-5 py-4">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                    Research-led
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    Exploring the operating model before presenting it as a
+                    production marketplace.
+                  </p>
+                </div>
+                <div className="border-l-4 border-brand-sky bg-brand-paper px-5 py-4">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                    SME-focused
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    Building practical service layers for small businesses that
+                    need faster customer operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-stretch">
+            <article className="flex min-h-full flex-col overflow-hidden rounded-[2rem] bg-brand-ink p-6 text-white shadow-[0_24px_90px_rgba(2,6,23,0.22)] sm:p-8">
+              <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-sky">
+                    Astan research track
+                  </p>
+                  <h3 className="mt-4 font-display text-3xl font-semibold tracking-[-0.04em] text-white">
+                    Tokenized asset infrastructure
+                  </h3>
+                </div>
+                <span className="inline-flex self-start rounded-full border border-white/10 bg-white/[0.08] px-4 py-2 text-sm font-semibold text-slate-200">
+                  RWA-ready thinking
+                </span>
+              </div>
+
+              <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300">
+                The case for tokenization is strongest in markets where good
+                assets exist but financing is slow, opaque, or concentrated.
+                Astan is studying the full system: asset verification, ownership
+                records, investor onboarding, compliant transfer, and the
+                product experience that makes it understandable.
+              </p>
+
+              <div className="mt-auto pt-6">
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {tokenizationBuildBlocks.map((block) => (
+                    <span
+                      key={block}
+                      className="rounded-[1.1rem] border border-white/10 bg-white/[0.08] px-4 py-3 text-sm font-medium text-slate-200"
+                    >
+                      {block}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
+
+            <article className="flex min-h-full flex-col rounded-[2rem] border border-slate-200 bg-brand-paper p-6 sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+                SME operations
+              </p>
+              <h3 className="mt-4 font-display text-3xl font-semibold tracking-[-0.04em] text-slate-950">
+                Multi-tenant WhatsApp service for SMEs
+              </h3>
+              <p className="mt-4 text-base leading-8 text-slate-600">
+                Astan is also building a WhatsApp-first service layer for small
+                businesses: one platform where multiple SMEs can manage customer
+                conversations, campaigns, support, orders, and follow-ups from
+                isolated tenant workspaces.
+              </p>
+
+              <div className="mt-auto grid gap-3 pt-6 sm:grid-cols-2">
+                {whatsappServiceCapabilities.map((capability) => (
+                  <div
+                    key={capability}
+                    className="rounded-[1.2rem] border border-slate-200 bg-white px-4 py-4 text-sm font-semibold leading-6 text-slate-700"
+                  >
+                    {capability}
+                  </div>
+                ))}
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-12 grid gap-4 md:grid-cols-3">
+            {tokenizationPillars.map((pillar) => (
+              <article
+                key={pillar.title}
+                className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-[0_18px_60px_rgba(15,23,42,0.06)]"
+              >
+                <h3 className="font-display text-xl font-semibold tracking-[-0.03em] text-slate-950">
+                  {pillar.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {pillar.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
         id="approach"
         className="scroll-mt-28 bg-white py-24 text-slate-900 sm:py-28"
       >
@@ -1084,6 +1255,66 @@ function Hero() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="blog"
+        className="scroll-mt-28 bg-brand-paper py-20 text-slate-900 sm:py-24"
+      >
+        <div className="section-shell">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <span className="eyebrow border-slate-200 bg-white text-slate-500">
+                Blog
+              </span>
+              <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+                Articles from Astan&apos;s field notes.
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                A growing library of practical writing on tokenization,
+                learning systems, product thinking, and the technologies Astan
+                is paying attention to.
+              </p>
+            </div>
+            <a
+              href="mailto:dev@astantechnologies.com?subject=Astan%20research%20and%20articles"
+              className="inline-flex items-center text-sm font-semibold text-slate-700 transition hover:text-primary"
+            >
+              Discuss the research
+              <span className="ml-2" aria-hidden="true">
+                -&gt;
+              </span>
+            </a>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {blogArticles.map((article) => (
+              <article
+                key={article.href}
+                className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_20px_70px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_28px_88px_rgba(15,23,42,0.1)] sm:p-7"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+                  {article.category}
+                </p>
+                <h3 className="mt-4 font-display text-3xl font-semibold tracking-[-0.04em] text-slate-950">
+                  {article.title}
+                </h3>
+                <p className="mt-4 text-base leading-8 text-slate-600">
+                  {article.description}
+                </p>
+                <a
+                  href={article.href}
+                  className="mt-6 inline-flex items-center text-sm font-semibold text-slate-900 transition hover:text-primary"
+                >
+                  Read article
+                  <span className="ml-2" aria-hidden="true">
+                    -&gt;
+                  </span>
+                </a>
+              </article>
+            ))}
           </div>
         </div>
       </section>
