@@ -4,7 +4,7 @@ const navigationItems = [
   { label: "Services", href: "/#services" },
   { label: "Research", href: "/#research" },
   { label: "Capabilities", href: "/#approach" },
-  { label: "Blog", href: "/#blog" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];
 

@@ -1279,10 +1279,10 @@ function Hero() {
               </p>
             </div>
             <a
-              href="mailto:dev@astantechnologies.com?subject=Astan%20research%20and%20articles"
+              href="/blog"
               className="inline-flex items-center text-sm font-semibold text-slate-700 transition hover:text-primary"
             >
-              Discuss the research
+              View all articles
               <span className="ml-2" aria-hidden="true">
                 -&gt;
               </span>
@@ -1290,14 +1290,23 @@ function Hero() {
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2">
-            {blogArticles.map((article) => (
+            {blogArticles.slice(0, 4).map((article) => {
+              const isExternal = article.href.startsWith("http");
+              return (
               <article
                 key={article.href}
                 className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_20px_70px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_28px_88px_rgba(15,23,42,0.1)] sm:p-7"
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
-                  {article.category}
-                </p>
+                <div className="flex items-center justify-between gap-3 mb-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+                    {article.category}
+                  </p>
+                  {isExternal && (
+                    <span className="rounded-full border border-slate-200 bg-brand-paper px-2 py-1 text-[0.65rem] font-medium text-slate-500">
+                      Medium
+                    </span>
+                  )}
+                </div>
                 <h3 className="mt-4 font-display text-3xl font-semibold tracking-[-0.04em] text-slate-950">
                   {article.title}
                 </h3>
@@ -1306,15 +1315,27 @@ function Hero() {
                 </p>
                 <a
                   href={article.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noreferrer" : undefined}
                   className="mt-6 inline-flex items-center text-sm font-semibold text-slate-900 transition hover:text-primary"
                 >
                   Read article
                   <span className="ml-2" aria-hidden="true">
-                    -&gt;
+                    {isExternal ? "↗" : "-&gt;"}
                   </span>
                 </a>
               </article>
-            ))}
+              );
+            })}
+          </div>
+
+          <div className="mt-8 text-center">
+            <a
+              href="/blog"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-primary/30 hover:text-primary"
+            >
+              View all {blogArticles.length} articles -&gt;
+            </a>
           </div>
         </div>
       </section>

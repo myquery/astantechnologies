@@ -547,7 +547,33 @@ export const blockchainBusinessArticle: BlogArticle = {
   ],
 };
 
+export const posGpsArticle: BlogArticle = {
+  slug: "optimizing-pos-terminal-gps-performance-geo-tagging-compliance",
+  href: "https://medium.com/@ibearua/optimizing-pos-terminal-gps-performance-for-geo-tagging-compliance-2862c2c86133",
+  title: "Optimizing POS Terminal GPS Performance for Geo-Tagging Compliance",
+  category: "Fintech",
+  author: "Stanley Arua",
+  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  date: "2024",
+  description: "A technical deep-dive into optimizing GPS performance on POS terminals for accurate geo-tagging and regulatory compliance in fintech deployments.",
+  sections: [],
+};
+
+export const movingCertaintyArticle: BlogArticle = {
+  slug: "moving-money-is-solved-moving-certainty-is-next",
+  href: "https://medium.com/@ibearua/moving-money-is-solved-moving-certainty-is-next-8e7f8db84aa3",
+  title: "Moving Money is Solved. Moving Certainty is Next.",
+  category: "Fintech",
+  author: "Stanley Arua",
+  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  date: "2024",
+  description: "Why the next frontier in financial infrastructure is not payment speed but settlement certainty — and what that means for builders in Africa.",
+  sections: [],
+};
+
 export const blogArticles = [
+  movingCertaintyArticle,
+  posGpsArticle,
   assetTokenizationArticle,
   learningProgrammingArticle,
   erpIntegrationArticle,
