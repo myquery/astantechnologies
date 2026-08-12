@@ -2,3 +2,7 @@ node_modules
 netlify.tomlAstan/
 Astan/
 .env.local
+
+# ignore env files with secrets
+.env.local
+.env.production
