@@ -547,7 +547,7 @@ export const blockchainBusinessArticle: BlogArticle = {
   ],
 };
 
-
+export const blogArticles = [
   assetTokenizationArticle,
   learningProgrammingArticle,
   erpIntegrationArticle,
