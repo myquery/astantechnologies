@@ -1,4 +1,4 @@
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 declare global {
   interface Window {
@@ -6,14 +6,12 @@ declare global {
   }
 }
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: string) => {
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url,
   });
 };
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({
   action,
   category,
