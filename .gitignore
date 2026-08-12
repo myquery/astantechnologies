@@ -6,3 +6,4 @@ Astan/
 # ignore env files with secrets
 .env.local
 .env.production
+.env
