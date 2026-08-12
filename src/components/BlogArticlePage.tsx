@@ -13,6 +13,35 @@ export default function BlogArticlePage({ article }: BlogArticlePageProps) {
       <Head>
         <title>{article.title} | Astan Technologies</title>
         <meta name="description" content={article.description} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: article.title,
+              description: article.description,
+              datePublished: article.date,
+              author: {
+                '@type': 'Person',
+                name: article.author,
+                jobTitle: article.authorTitle,
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Astan Technologies',
+                url: 'https://www.astantechnologies.com',
+              },
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': `https://www.astantechnologies.com${article.href}`,
+              },
+              url: `https://www.astantechnologies.com${article.href}`,
+              articleSection: article.category,
+              keywords: article.category,
+            }),
+          }}
+        />
       </Head>
 
       <div className="min-h-screen bg-brand-paper text-slate-900">

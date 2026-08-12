@@ -1,0 +1,33 @@
+# Astan Technologies
+> Astan Technologies is a software development company based in Nigeria that designs and ships web apps, mobile apps, blockchain applications, ERP integrations, enterprise software, and business automation solutions.
+
+## About
+Astan Technologies builds software for startups, enterprises, and institutions across Nigeria and Africa. The company specialises in customer-facing products, AI-integrated workflows, blockchain systems, commerce platforms, and internal enterprise tools. Astan also provides custom training and enablement for teams adopting new technology.
+
+## Services
+- Web application development (React, Next.js, Node.js)
+- Mobile app development (iOS and Android)
+- Blockchain application development (dApps, DeFi, smart contracts)
+- Bitcoin application development
+- ERP and CRM integration and automation
+- Enterprise software development
+- Shopify and ecommerce development
+- Custom team training and enablement
+
+## Products Built
+- eCarePharm: ecommerce platform for pharmacy and health product sales with Paystack integration (https://www.ecarepharm.com)
+- Homa: mobile-first home management app with AI-assisted planning, grocery management, crypto wallet support, and cooperative features (https://gethoma.app)
+
+## Blog and Research
+- Asset tokenization and financing infrastructure for Nigerian businesses: https://www.astantechnologies.com/blog/asset-tokenization-financing-problem-nobody-talks-about/
+- Learning programming languages and building software: https://www.astantechnologies.com/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares/
+- Custom ERP integration and business automation in Nigeria: https://www.astantechnologies.com/blog/custom-erp-integration-business-automation-nigeria/
+- Mobile and web app development guide for Nigerian founders: https://www.astantechnologies.com/blog/mobile-web-app-development-nigeria-guide/
+- Blockchain app development use cases for Nigerian companies: https://www.astantechnologies.com/blog/blockchain-app-development-business-use-cases-nigeria/
+
+## Contact
+- Email: dev@astantechnologies.com
+- Website: https://www.astantechnologies.com
+
+## Location
+Nigeria (serving clients across Africa and globally)
