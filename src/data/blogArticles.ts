@@ -318,7 +318,239 @@ export const assetTokenizationArticle: BlogArticle = {
   ],
 };
 
-export const blogArticles = [
+export const erpIntegrationArticle: BlogArticle = {
+  slug: "custom-erp-integration-business-automation-nigeria",
+  href: "/blog/custom-erp-integration-business-automation-nigeria/",
+  title: "Custom ERP Integration: How Nigerian Businesses Are Automating Operations",
+  category: "Business automation",
+  author: "Stanley Arua",
+  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  date: "June 10, 2026",
+  description: "A practical guide to ERP and CRM integration for Nigerian businesses looking to automate workflows and reduce manual overhead.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "Most Nigerian businesses reach a point where spreadsheets, WhatsApp threads, and disconnected software stop working. Orders get lost. Inventory counts are wrong. Finance teams spend three days closing the books every month. The business is growing but the operations are not keeping up.",
+        "This is the problem that ERP integration solves. Not by adding more software, but by connecting the software you already use into a single system that shares data, automates repetitive tasks, and gives management a real-time view of the business.",
+        "This article explains what ERP integration actually involves, which Nigerian businesses benefit most, and what a realistic implementation looks like from start to finish.",
+      ],
+    },
+    {
+      heading: "What ERP integration means in practice",
+      paragraphs: [
+        "ERP stands for Enterprise Resource Planning. In practice it means a central system that connects your sales, inventory, procurement, finance, and HR data so that every department is working from the same numbers.",
+        "Integration means connecting that central system to the other tools your business uses: your accounting software, your ecommerce platform, your payment gateway, your logistics provider, your CRM. When a sale happens in your online store, the inventory updates automatically. When a purchase order is raised, the finance system records the liability. When a customer pays, the accounts receivable clears without anyone typing anything.",
+        "The goal is not to replace your team. It is to remove the manual work that slows them down and introduces errors.",
+      ],
+    },
+    {
+      heading: "Which businesses benefit most",
+      paragraphs: [
+        "ERP integration delivers the clearest return for businesses that have outgrown manual coordination but have not yet built the internal systems to replace it. In Nigeria, that typically means manufacturers, distributors, retailers with multiple locations, logistics companies, and any business processing more than a few hundred transactions per month.",
+      ],
+      list: [
+        "Manufacturers tracking raw materials, work-in-progress, and finished goods across multiple warehouses",
+        "Distributors managing orders from dozens of retailers with different credit terms and delivery schedules",
+        "Retailers reconciling point-of-sale data across branches with a central inventory and finance system",
+        "Service businesses billing clients, tracking project costs, and managing subcontractor payments",
+        "Agricultural businesses managing seasonal procurement, storage, and sales cycles",
+      ],
+    },
+    {
+      heading: "The most common integration points",
+      paragraphs: [
+        "Every business is different but the integration points that deliver the most value tend to be consistent across industries.",
+      ],
+      list: [
+        "Accounting and finance: connecting sales, procurement, and payroll data to your accounting system so the books update in real time",
+        "Inventory management: syncing stock levels across warehouses, stores, and online channels so you never oversell or underorder",
+        "Payment gateways: automatically reconciling Paystack, Flutterwave, or bank transfer payments against invoices and orders",
+        "CRM: linking customer purchase history, outstanding balances, and communication records so your sales team has the full picture",
+        "Logistics: connecting order management to delivery tracking so customers get accurate updates and operations can plan efficiently",
+      ],
+    },
+    {
+      heading: "What a realistic implementation looks like",
+      paragraphs: [
+        "The businesses that get the most from ERP integration are the ones that treat it as a process improvement project, not a software installation. The technology is the easy part. The hard part is mapping your current processes, identifying where the manual work and errors are concentrated, and designing the integrated system around how your business actually operates.",
+        "A typical implementation for a mid-sized Nigerian business runs in four phases over eight to sixteen weeks depending on complexity.",
+      ],
+      orderedList: [
+        "Discovery: mapping current workflows, identifying integration points, and defining what success looks like in measurable terms",
+        "Design: specifying the data flows, automation rules, and user interfaces for each integration",
+        "Build and test: developing the integrations, running parallel operations to validate accuracy, and training the team",
+        "Go-live and support: switching to the integrated system with close monitoring and rapid response to issues in the first weeks",
+      ],
+    },
+    {
+      heading: "Common mistakes to avoid",
+      list: [
+        "Trying to automate broken processes: integration amplifies whatever is already happening, so fix the process before you automate it",
+        "Underestimating data quality: if your existing data is inconsistent or incomplete, clean it before migration or the integrated system will inherit the same problems",
+        "Skipping user training: the best integration fails if the team does not understand how to use it or why it works the way it does",
+        "Over-engineering the first phase: start with the highest-value integrations and expand from there rather than trying to connect everything at once",
+      ],
+    },
+    {
+      heading: "The business case",
+      paragraphs: [
+        "The return on ERP integration is not primarily about cost reduction, though that happens. It is about capacity. A business running on integrated systems can process more orders, serve more customers, and make better decisions with the same team. The manual coordination work that consumed hours every day gets replaced by automated workflows that run in seconds.",
+        "For Nigerian businesses competing in markets where margins are thin and execution speed matters, that capacity advantage compounds quickly. The businesses that build integrated operations early are the ones that can scale without proportionally scaling their headcount.",
+      ],
+    },
+  ],
+};
+
+export const mobileWebAppArticle: BlogArticle = {
+  slug: "mobile-web-app-development-nigeria-guide",
+  href: "/blog/mobile-web-app-development-nigeria-guide/",
+  title: "Building Mobile and Web Apps in Nigeria: What Founders Need to Know",
+  category: "App development",
+  author: "Stanley Arua",
+  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  date: "June 24, 2026",
+  description: "A founder's guide to commissioning mobile and web app development in Nigeria — what to expect, what to avoid, and how to get a product that actually ships.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "Building a mobile or web app is one of the most consequential decisions a Nigerian founder or business owner will make. Done well, it creates a product that serves customers, generates revenue, and compounds in value over time. Done poorly, it produces something that costs more than expected, ships later than planned, and does not work the way anyone imagined.",
+        "The gap between those two outcomes is rarely about the technology. It is almost always about the process: how clearly the product was defined before development started, how well the development team communicated during the build, and how seriously the business treated testing and launch.",
+        "This guide covers what you actually need to know before commissioning app development in Nigeria.",
+      ],
+    },
+    {
+      heading: "Web app vs mobile app: which one do you need",
+      paragraphs: [
+        "The first decision most founders get wrong is choosing between a web app and a mobile app before they have thought carefully about their users.",
+        "A web app runs in a browser. Users access it through a URL on any device. It is faster to build, easier to update, and does not require app store approval. It is the right choice for most business tools, dashboards, admin systems, and products where users are primarily on desktop or laptop.",
+        "A mobile app is installed on a phone. It can access device features like the camera, GPS, push notifications, and offline storage. It is the right choice when your users are primarily on mobile, when the product needs to work without internet, or when device features are central to the experience.",
+        "Many products need both. But most products should start with one and expand later. Trying to build a web app and iOS and Android simultaneously from day one is the fastest way to run out of budget before you have validated anything.",
+      ],
+    },
+    {
+      heading: "What to define before development starts",
+      paragraphs: [
+        "The most expensive mistakes in app development happen before a single line of code is written. They happen when a business commissions development without clearly defining what the product needs to do, who it is for, and what success looks like.",
+      ],
+      list: [
+        "User flows: the specific journeys your users will take through the product, from first open to completed action",
+        "Core features: the minimum set of functionality the product needs to deliver value, separated from nice-to-have features that can come later",
+        "Data model: what information the product needs to store, how it relates, and who can access what",
+        "Integration requirements: what external systems the product needs to connect to — payment gateways, logistics APIs, existing databases",
+        "Success metrics: how you will know the product is working — active users, transaction volume, retention rate, revenue",
+      ],
+    },
+    {
+      heading: "How to evaluate a development partner",
+      paragraphs: [
+        "Choosing a development partner in Nigeria is harder than it should be because the market has a wide range of quality and very little standardisation in how services are presented. A few things that actually matter when evaluating a team:",
+      ],
+      list: [
+        "Shipped products: ask to see live products they have built, not mockups or case studies. Use the products. See if they work.",
+        "Communication style: the team you hire will be your primary point of contact for months. If they are slow to respond or unclear in their explanations during the sales process, that will not improve during the build.",
+        "Technical specificity: a good development team can explain their technical choices in plain language. If they cannot tell you why they are recommending a particular stack or architecture, that is a warning sign.",
+        "Post-launch support: ask explicitly what happens after the product launches. Who fixes bugs? How are updates handled? What does ongoing maintenance cost?",
+      ],
+    },
+    {
+      heading: "Realistic timelines and budgets",
+      paragraphs: [
+        "The two questions every founder asks first are how long will it take and how much will it cost. The honest answer to both is that it depends on scope, and scope is almost always larger than founders initially estimate.",
+        "A simple web app with user authentication, a core workflow, and basic admin functionality takes eight to twelve weeks with a focused team. A mobile app for iOS and Android with offline support, push notifications, and payment integration takes twelve to twenty weeks. A product that needs both, plus a backend API, plus third-party integrations, takes longer.",
+        "Budget scales with complexity, team size, and the quality of the output you need. The cheapest option is rarely the most economical one when you factor in the cost of rebuilding something that was not built correctly the first time.",
+      ],
+    },
+    {
+      heading: "The launch is not the finish line",
+      paragraphs: [
+        "Most founders treat the app launch as the end of the development process. It is actually the beginning of the product lifecycle. Real users interact with the product in ways that were not anticipated during development. Bugs appear. Performance issues emerge under load. Features that seemed important turn out to be unused while features that were deprioritised turn out to be critical.",
+        "Building in a budget and plan for post-launch iteration is not optional. It is the difference between a product that improves over time and one that stagnates at the quality level it shipped at.",
+      ],
+    },
+  ],
+};
+
+export const blockchainBusinessArticle: BlogArticle = {
+  slug: "blockchain-app-development-business-use-cases-nigeria",
+  href: "/blog/blockchain-app-development-business-use-cases-nigeria/",
+  title: "Blockchain App Development: Real Business Use Cases for Nigerian Companies",
+  category: "Blockchain",
+  author: "Stanley Arua",
+  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  date: "July 8, 2026",
+  description: "A practical look at how Nigerian businesses are using blockchain applications beyond cryptocurrency — from supply chain to payments to digital identity.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "Blockchain has a perception problem in Nigeria. For most people, it means cryptocurrency — speculation, volatility, and the kind of projects that promise extraordinary returns and deliver nothing. That association is understandable given the history, but it obscures something more important: the underlying technology has genuine business applications that have nothing to do with trading tokens.",
+        "This article is about those applications. Specifically, the use cases where blockchain solves a real business problem in the Nigerian context — where the properties of a distributed, tamper-resistant ledger create value that existing systems cannot replicate.",
+      ],
+    },
+    {
+      heading: "What blockchain actually does well",
+      paragraphs: [
+        "Before getting to specific use cases, it helps to be precise about what blockchain is actually good at. Not every problem needs a blockchain solution, and applying the technology where it does not fit creates complexity without value.",
+        "Blockchain is useful when you need a shared record that multiple parties must trust, where no single party should control the data, and where the history of changes must be verifiable and permanent. It is particularly valuable in environments where trust between parties is low, intermediaries are expensive or slow, and the cost of fraud or data manipulation is high.",
+        "In Nigeria, those conditions describe a significant portion of the economy.",
+      ],
+    },
+    {
+      heading: "Supply chain and product authentication",
+      paragraphs: [
+        "Counterfeit goods are a serious problem across Nigerian industries — pharmaceuticals, electronics, agricultural inputs, consumer goods. The economic cost is significant. The human cost, in the case of fake medicines and substandard food products, is worse.",
+        "Blockchain-based supply chain applications address this by creating a verifiable record of a product's journey from manufacturer to end consumer. Each step in the chain — production, quality testing, packaging, shipping, customs clearance, distribution, retail — is recorded as a transaction on the ledger. The record cannot be altered retroactively. A consumer or regulator can scan a QR code and verify the product's complete history in seconds.",
+        "For Nigerian manufacturers and importers competing against counterfeit versions of their products, this is a meaningful competitive and compliance advantage.",
+      ],
+    },
+    {
+      heading: "Cross-border payments and remittances",
+      paragraphs: [
+        "Nigeria receives more remittances than any other country in sub-Saharan Africa. The cost of sending that money through traditional channels — banks, money transfer operators — remains high relative to the transaction value, particularly for smaller amounts.",
+        "Blockchain-based payment rails reduce that cost by removing intermediaries from the settlement process. A payment that previously required correspondent banking relationships, currency conversion at multiple points, and two to five business days to settle can move in minutes at a fraction of the cost.",
+        "For businesses with international suppliers, customers, or employees, this is not a theoretical benefit. It is a direct reduction in transaction costs and a meaningful improvement in cash flow predictability.",
+      ],
+    },
+    {
+      heading: "Digital identity and credential verification",
+      paragraphs: [
+        "Identity verification is a friction point across Nigerian financial services, healthcare, education, and government. Documents are lost, forged, or simply unavailable. Verification processes are slow and expensive. People without formal documentation are excluded from services they are entitled to.",
+        "Blockchain-based identity systems allow individuals to control a verifiable digital record of their credentials — educational qualifications, professional certifications, financial history, government-issued identity — that can be shared with any institution that needs to verify them, without the institution needing to contact the original issuer.",
+        "For employers verifying qualifications, financial institutions onboarding customers, and government agencies delivering services, this reduces verification time from days to seconds and eliminates a significant category of document fraud.",
+      ],
+    },
+    {
+      heading: "Land registry and property rights",
+      paragraphs: [
+        "Land disputes are among the most common sources of litigation in Nigeria. The underlying cause is almost always the same: paper-based records that are incomplete, inconsistent, or susceptible to manipulation. Multiple parties claim ownership of the same land. Transactions are not recorded. Boundaries are disputed.",
+        "A blockchain-based land registry creates a permanent, tamper-resistant record of ownership and transaction history. Once a title is recorded on the ledger, the history of every subsequent transfer is preserved and verifiable. Disputes that currently take years to resolve in court become resolvable by reference to an authoritative shared record.",
+        "Several Nigerian state governments have explored this application. The technology is ready. The implementation challenge is the institutional and political work of migrating existing records and establishing the registry as the authoritative source.",
+      ],
+    },
+    {
+      heading: "Cooperative and community finance",
+      paragraphs: [
+        "Cooperatives, thrift societies, and community savings groups are a significant part of the Nigerian financial system. They serve millions of people who are underserved by formal banking. But they operate on trust and manual record-keeping, which creates vulnerability to fraud, disputes, and operational failure when key individuals leave.",
+        "Blockchain applications for cooperative finance automate the record-keeping, enforce the rules of the cooperative through smart contracts, and create a transparent ledger that every member can verify. Contributions are recorded automatically. Loan disbursements follow programmed eligibility rules. Interest calculations are transparent. The cooperative's financial history is permanent and auditable.",
+        "This does not replace the social trust that makes cooperatives work. It removes the operational vulnerabilities that cause them to fail.",
+      ],
+    },
+    {
+      heading: "When blockchain is not the right answer",
+      paragraphs: [
+        "Not every business problem needs a blockchain solution. If you have a single trusted party managing a database, a conventional database is simpler, cheaper, and easier to maintain. If the parties involved already trust each other and the data does not need to be shared externally, a shared database or API integration will serve you better.",
+        "The businesses that get the most value from blockchain applications are the ones where the trust problem is real, the intermediary cost is significant, and the need for a permanent verifiable record is genuine. If those conditions apply to your business problem, blockchain is worth serious consideration. If they do not, it probably is not.",
+      ],
+    },
+  ],
+};
+
+
   assetTokenizationArticle,
   learningProgrammingArticle,
+  erpIntegrationArticle,
+  mobileWebAppArticle,
+  blockchainBusinessArticle,
 ];
