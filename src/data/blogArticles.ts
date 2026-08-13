@@ -581,10 +581,306 @@ export const movingCertaintyArticle: BlogArticle = {
   sections: [],
 };
 
+export const stablecoinArticle: BlogArticle = {
+  slug: "stablecoins-africa-business-use-cases-nigeria",
+  href: "/blog/stablecoins-africa-business-use-cases-nigeria/",
+  title: "Stablecoins in Africa: Why Nigerian Businesses Are Paying Attention",
+  category: "Stablecoins",
+  pillar: "blockchain",
+  date: "August 5, 2026",
+  description: "A practical look at how stablecoins solve real currency, payment, and treasury problems for Nigerian and African businesses — beyond the hype.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "The naira lost over 40% of its value against the dollar in 2023. Businesses with dollar-denominated costs — importing raw materials, paying SaaS subscriptions, settling international suppliers — absorbed that loss directly. Some passed it to customers. Many could not.",
+        "Stablecoins did not cause that problem. But they are increasingly part of how Nigerian businesses are managing it. Not as a speculative bet, but as a practical treasury and payments tool that gives businesses access to dollar-denominated value without the friction of the traditional banking system.",
+        "This article explains what stablecoins actually are, how they work in practice, and where they create genuine value for businesses operating in Nigeria and across Africa.",
+      ],
+    },
+    {
+      heading: "What a stablecoin actually is",
+      paragraphs: [
+        "A stablecoin is a digital asset designed to maintain a stable value relative to a reference asset — usually the US dollar. Unlike Bitcoin or Ethereum, whose prices fluctuate dramatically, a dollar-pegged stablecoin like USDC or USDT is designed to always be worth approximately one dollar.",
+        "The mechanism that maintains that peg varies. Fiat-backed stablecoins hold actual dollars or dollar-equivalent assets in reserve for every token in circulation. Algorithmic stablecoins use software mechanisms to manage supply and demand. For business use cases, fiat-backed stablecoins issued by regulated entities are the relevant category — they are audited, redeemable, and increasingly integrated into mainstream financial infrastructure.",
+        "What makes them useful is not the technology. It is the combination of dollar stability, 24/7 availability, near-instant settlement, and programmability that traditional dollar accounts do not offer.",
+      ],
+    },
+    {
+      heading: "The core problem they solve in Nigeria",
+      paragraphs: [
+        "Nigerian businesses face a specific set of currency and payment problems that stablecoins address more directly than most alternatives.",
+      ],
+      list: [
+        "FX access: obtaining dollars through official banking channels is slow, expensive, and subject to allocation constraints. Stablecoins provide dollar-denominated value without requiring a bank to source physical forex.",
+        "Cross-border payments: paying international suppliers through correspondent banking takes days and costs 3–7% in fees. Stablecoin transfers settle in minutes at a fraction of the cost.",
+        "Treasury preservation: businesses with naira revenues but dollar costs can hold a portion of their treasury in stablecoins to reduce FX exposure between the time they earn naira and the time they need dollars.",
+        "Payroll for remote teams: paying contractors or employees in other African countries or globally in stablecoins eliminates the correspondent banking complexity that makes small international transfers disproportionately expensive.",
+      ],
+    },
+    {
+      heading: "How businesses are using them in practice",
+      paragraphs: [
+        "The use cases that have gained the most traction among Nigerian businesses are not exotic. They are straightforward applications of dollar-stable value to problems that every business with international exposure faces.",
+        "Import financing: a Lagos-based importer receives naira from customers, converts to USDC through a licensed exchange, holds the USDC until the supplier invoice is due, then pays directly. The entire cycle avoids the bank FX queue and settles faster than a SWIFT transfer.",
+        "Freelancer and contractor payments: a Nigerian tech company with clients in Europe pays its Lagos-based developers in USDC, which the developers can hold, spend through crypto-enabled cards, or convert to naira at the prevailing rate. The company avoids the complexity of international payroll. The developers avoid the delay and cost of international wire transfers.",
+        "B2B settlement across African borders: two businesses — one in Nigeria, one in Kenya — settle a trade invoice in USDC rather than attempting a naira-to-shilling conversion through correspondent banks. The settlement is faster, cheaper, and does not require either party to hold the other's currency.",
+      ],
+    },
+    {
+      heading: "The regulatory picture in Nigeria",
+      paragraphs: [
+        "The CBN's 2024 circular on virtual asset service providers created a clearer framework for stablecoin use in Nigeria than existed previously. Licensed VASPs can now facilitate stablecoin transactions for businesses, and the SEC's digital asset rules provide additional guidance on custody and compliance.",
+        "This does not mean stablecoins are unregulated or that compliance is optional. Businesses using stablecoins for payments or treasury management need to work with licensed providers, maintain transaction records for AML compliance, and understand the tax treatment of stablecoin holdings and conversions under Nigerian law.",
+        "The regulatory direction is toward accommodation rather than prohibition — which is consistent with the CBN's own eNaira initiative and the broader recognition that digital payment infrastructure is a competitive necessity for the Nigerian economy.",
+      ],
+    },
+    {
+      heading: "What to watch for",
+      paragraphs: [
+        "Stablecoins are not a risk-free tool. The risks worth understanding before using them for business purposes are specific and manageable, but they are real.",
+      ],
+      list: [
+        "Counterparty risk: not all stablecoins are equally well-backed. USDC and USDT are the most liquid and most audited. Smaller or algorithmic stablecoins carry significantly higher risk of de-pegging.",
+        "Custody risk: holding stablecoins on an exchange means trusting that exchange. For material treasury balances, self-custody or institutional custody with a regulated provider is more appropriate.",
+        "Regulatory risk: the framework is still evolving. A business that builds critical payment infrastructure on stablecoins needs to monitor regulatory developments and maintain the ability to adapt.",
+        "Conversion friction: getting stablecoins in and out of naira still involves licensed exchanges with their own KYC requirements, liquidity constraints, and conversion spreads. The rails are improving but are not yet seamless.",
+      ],
+    },
+    {
+      heading: "The bottom line",
+      paragraphs: [
+        "Stablecoins are not a replacement for the banking system. They are a complement to it — one that fills specific gaps in cross-border payments, FX access, and treasury management that the traditional system handles poorly for Nigerian businesses.",
+        "The businesses that benefit most are those with regular international payment needs, dollar-cost exposure, or cross-African trade relationships. For those businesses, stablecoins are not a speculative technology. They are a practical infrastructure choice that is already working at scale.",
+      ],
+    },
+  ],
+};
+
+export const bitcoinWalletArticle: BlogArticle = {
+  slug: "bitcoin-wallet-development-nigeria-guide",
+  href: "/blog/bitcoin-wallet-development-nigeria-guide/",
+  title: "Building a Bitcoin Wallet: What Developers and Businesses Need to Know",
+  category: "Bitcoin",
+  pillar: "blockchain",
+  date: "August 19, 2026",
+  description: "A technical and product guide to Bitcoin wallet development — key management, transaction signing, UTXO handling, and what to consider when building for African users.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "Bitcoin wallet development is one of the most technically demanding areas of software engineering in the blockchain space. The stakes are high — a bug in key management or transaction signing can result in permanent, irreversible loss of funds. The standards are exacting. And the user expectations, particularly in markets like Nigeria where Bitcoin is used for real economic activity rather than speculation, are unforgiving.",
+        "This guide covers the core technical concepts every developer needs to understand before building a Bitcoin wallet, the product decisions that determine whether a wallet actually serves its users, and the specific considerations that matter when building for African markets.",
+      ],
+    },
+    {
+      heading: "The fundamentals: keys, addresses, and UTXOs",
+      paragraphs: [
+        "A Bitcoin wallet does not store Bitcoin. It stores the private keys that prove ownership of Bitcoin recorded on the blockchain. Understanding this distinction is the foundation of everything else in wallet development.",
+        "A private key is a 256-bit number generated from a cryptographically secure random source. From the private key, a public key is derived using elliptic curve multiplication. From the public key, a Bitcoin address is derived through hashing. The address is what you share to receive funds. The private key is what you use to authorize spending them. The private key must never leave the secure environment where it was generated.",
+        "Bitcoin uses a UTXO model — Unspent Transaction Outputs. Your balance is not a single number stored somewhere. It is the sum of all unspent outputs from previous transactions that your keys can spend. When you send Bitcoin, you are consuming one or more UTXOs and creating new ones. A wallet must track all UTXOs associated with its keys, select the right ones for each transaction, and handle change outputs correctly.",
+      ],
+    },
+    {
+      heading: "HD wallets and key derivation",
+      paragraphs: [
+        "Modern Bitcoin wallets use hierarchical deterministic key derivation, defined in BIP32 and extended by BIP44. From a single seed — typically represented as a 12 or 24-word mnemonic phrase under BIP39 — an entire tree of key pairs can be derived deterministically. This means a single backup of the seed phrase recovers all keys and all funds.",
+        "For wallet developers, this means implementing BIP32 derivation correctly, following the BIP44 path structure for account and address separation, and generating new addresses for each transaction to preserve privacy. The mnemonic generation must use a cryptographically secure entropy source — this is not a place for shortcuts.",
+      ],
+      list: [
+        "BIP39: mnemonic phrase generation and seed derivation",
+        "BIP32: hierarchical deterministic key derivation from seed",
+        "BIP44: multi-account path structure (m/44'/0'/account'/change/index)",
+        "BIP84: native SegWit (bech32) address derivation for lower transaction fees",
+      ],
+    },
+    {
+      heading: "Transaction construction and signing",
+      paragraphs: [
+        "Building a valid Bitcoin transaction requires selecting UTXOs to spend, constructing the transaction inputs and outputs, calculating the fee, signing each input with the corresponding private key, and broadcasting the signed transaction to the network.",
+        "Fee estimation is one of the most practically important and frequently mishandled parts of transaction construction. Bitcoin fees are denominated in satoshis per virtual byte (sat/vB). A transaction that underpays the fee may sit unconfirmed for hours or days. A transaction that overpays wastes the user's money. Good wallets query mempool fee estimates in real time and give users meaningful control over the speed/cost tradeoff.",
+        "For African users specifically, fee sensitivity matters more than in markets where Bitcoin amounts are large relative to fees. A wallet that charges 5,000 satoshis in fees on a 50,000 satoshi transaction is charging 10% — unacceptable for regular use. Implementing SegWit and eventually Taproot transaction formats reduces the byte size of transactions and therefore the absolute fee for the same fee rate.",
+      ],
+    },
+    {
+      heading: "Custody models: custodial vs non-custodial",
+      paragraphs: [
+        "The most consequential product decision in wallet development is the custody model. A custodial wallet holds private keys on behalf of users — the wallet provider controls the funds. A non-custodial wallet generates and stores keys on the user's device — the user controls the funds.",
+        "Custodial wallets are easier to build, easier to recover from user error, and easier to integrate with compliance requirements. They are appropriate for exchange-integrated wallets and products where the user base is not technically sophisticated enough to manage seed phrases safely.",
+        "Non-custodial wallets give users full sovereignty over their funds. They cannot be frozen, seized, or lost due to a provider's insolvency. They are appropriate for users who understand the responsibility that comes with key custody and for use cases where censorship resistance matters.",
+        "For Nigerian users, the choice is not purely technical. It reflects a real tradeoff between the risk of user error (losing a seed phrase) and the risk of counterparty failure (an exchange going insolvent or freezing withdrawals). Both risks are real and have materialized in the Nigerian market.",
+      ],
+    },
+    {
+      heading: "Building for African users: specific considerations",
+      list: [
+        "Low-bandwidth environments: wallet sync must work on 3G connections. Light client implementations (SPV or Electrum protocol) are more appropriate than full node sync for mobile wallets.",
+        "Offline transaction signing: in areas with intermittent connectivity, the ability to construct and sign transactions offline and broadcast when connectivity is available is a meaningful feature.",
+        "Local currency display: users think in naira, not satoshis. Real-time naira/BTC conversion using reliable price feeds is a baseline expectation.",
+        "Fee transparency: users need to understand what they are paying and why before they confirm a transaction. Opaque fee structures erode trust.",
+        "Recovery UX: seed phrase backup and recovery must be designed for users who may not have prior experience with cryptographic key management. Clear, patient onboarding is not optional.",
+      ],
+    },
+    {
+      heading: "Security requirements",
+      list: [
+        "Private keys must be stored in the device's secure enclave or equivalent hardware-backed keystore — never in plain application storage",
+        "Mnemonic entropy must come from a cryptographically secure random number generator",
+        "Transaction signing must happen in an isolated environment with no network access at the moment of signing",
+        "All communication with nodes and APIs must use TLS with certificate pinning",
+        "The application must implement jailbreak/root detection and respond appropriately",
+        "Clipboard access for address pasting must be handled carefully to prevent address substitution attacks",
+      ],
+    },
+  ],
+};
+
+export const rgbProtocolArticle: BlogArticle = {
+  slug: "rgb-protocol-asset-tokenization-bitcoin",
+  href: "/blog/rgb-protocol-asset-tokenization-bitcoin/",
+  title: "RGB Protocol: Asset Tokenization on Bitcoin Without the Blockchain Bloat",
+  category: "RGB Protocol",
+  pillar: "blockchain",
+  date: "September 2, 2026",
+  description: "How the RGB protocol enables smart contracts and asset issuance on Bitcoin using client-side validation — and why it matters for tokenization in Africa.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "Most asset tokenization discussions assume Ethereum or an EVM-compatible chain as the settlement layer. That assumption is worth questioning — particularly for use cases in Africa where Bitcoin has deeper liquidity, broader adoption, and a longer track record of operating under adversarial conditions than any alternative.",
+        "RGB is a protocol that enables smart contracts and asset issuance on Bitcoin without putting contract logic or asset data on the Bitcoin blockchain itself. It uses Bitcoin transactions as commitment anchors while keeping all contract state and validation logic off-chain, on the client side. The result is a system that inherits Bitcoin's security and censorship resistance while adding programmability and asset issuance capabilities that Bitcoin's base layer does not natively support.",
+        "This article explains how RGB works, what it enables, and why it is a serious candidate for asset tokenization infrastructure in markets like Nigeria.",
+      ],
+    },
+    {
+      heading: "The problem with on-chain smart contracts for tokenization",
+      paragraphs: [
+        "Ethereum-based tokenization puts everything on the blockchain: contract logic, asset state, ownership records, transfer history. This creates a globally verifiable record, but it also means every node in the network must store and validate every contract and every transfer. The cost of that global validation is paid in transaction fees, block space competition, and the fundamental scalability constraints of a shared global state machine.",
+        "For tokenization use cases in Africa — where the assets being tokenized are often small in value, the transaction volumes are high, and the users are fee-sensitive — the economics of on-chain Ethereum tokenization are frequently unfavorable. Gas fees during periods of network congestion can exceed the value of the transaction being settled.",
+        "RGB takes a different approach. It moves validation off-chain entirely.",
+      ],
+    },
+    {
+      heading: "How RGB works: client-side validation",
+      paragraphs: [
+        "The core insight of RGB is that not everyone needs to validate every contract. Only the parties involved in a transaction need to validate the state transition that affects them. This is called client-side validation.",
+        "In RGB, a contract is defined by a schema — a set of rules that govern what state transitions are valid. When Alice transfers an RGB asset to Bob, she constructs a state transition that moves ownership from her UTXO to Bob's UTXO, commits to that transition in a Bitcoin transaction (without revealing the contract data on-chain), and passes the full contract history to Bob off-chain. Bob validates the entire history of the asset — from issuance to the current transfer — on his own client, without relying on any third party or global consensus.",
+        "The Bitcoin blockchain serves as a timestamping and double-spend prevention layer. The contract logic and asset state live entirely off-chain, in the possession of the parties who need them.",
+      ],
+    },
+    {
+      heading: "What RGB enables for asset tokenization",
+      list: [
+        "Fungible asset issuance: issue tokens representing equity, debt instruments, commodity receipts, or any fungible value on Bitcoin — with transfer logic enforced by the RGB schema",
+        "Non-fungible assets: issue unique digital assets representing property titles, certificates, or identity credentials, anchored to Bitcoin UTXOs",
+        "Confidential transfers: RGB transfers do not reveal asset amounts or contract details on the Bitcoin blockchain — only a cryptographic commitment is visible on-chain",
+        "Lightning Network compatibility: RGB assets can be transferred through Lightning Network payment channels, enabling instant, low-fee asset transfers at scale",
+        "Programmable conditions: contract schemas can encode transfer restrictions, vesting schedules, compliance rules, and other conditions that must be satisfied for a state transition to be valid",
+      ],
+    },
+    {
+      heading: "Why this matters for Africa",
+      paragraphs: [
+        "The case for RGB in African tokenization contexts comes down to three things: Bitcoin's existing infrastructure, fee economics, and censorship resistance.",
+        "Bitcoin already has the deepest liquidity, the most widespread custody infrastructure, and the longest operational track record of any blockchain in Africa. Building tokenization on top of Bitcoin means building on infrastructure that already exists and is already trusted, rather than asking users and institutions to adopt a new chain.",
+        "The fee economics of client-side validation are fundamentally different from on-chain smart contracts. An RGB transfer costs one Bitcoin transaction — a few hundred satoshis at normal fee rates. The contract validation happens locally. There is no gas market, no block space competition for contract execution, no fee spike when the network is congested.",
+        "And for use cases involving assets that governments or financial institutions might want to censor or freeze — property rights in disputed territories, cross-border trade finance, community savings instruments — the censorship resistance of Bitcoin as the settlement layer is not an abstract property. It is a practical guarantee that the asset infrastructure cannot be shut down by a single regulatory action.",
+      ],
+    },
+    {
+      heading: "Current state and practical considerations",
+      paragraphs: [
+        "RGB is production-ready at the protocol level. The RGB v0.10 release stabilized the core protocol, and tooling for developers — including the RGB standard library and integration with Bitcoin wallets — is actively maturing. The Lightning Network integration for RGB assets is functional and being refined.",
+        "The practical considerations for builders are around tooling maturity and the off-chain data management requirement. Because contract history is held by the parties rather than on a global ledger, applications need to implement reliable off-chain storage and backup for contract state. Losing the contract history means losing the ability to prove ownership — there is no global ledger to recover it from.",
+        "For organizations building tokenization infrastructure in Africa, RGB represents a technically sound and economically favorable path that has been underexplored relative to its potential. The combination of Bitcoin security, client-side privacy, Lightning compatibility, and low fee economics addresses the specific constraints that make Ethereum-based tokenization difficult to deploy at scale in fee-sensitive, high-volume African markets.",
+      ],
+    },
+  ],
+};
+
+export const hyperledgerTokenizationArticle: BlogArticle = {
+  slug: "hyperledger-asset-tokenization-enterprise-africa",
+  href: "/blog/hyperledger-asset-tokenization-enterprise-africa/",
+  title: "Hyperledger Asset Tokenization: Enterprise Blockchain for African Financial Institutions",
+  category: "Hyperledger",
+  pillar: "fintech",
+  date: "September 16, 2026",
+  description: "How Hyperledger Fabric and Besu enable permissioned asset tokenization for banks, fintechs, and financial institutions in Africa — with real deployment considerations.",
+  sections: [
+    {
+      heading: "Introduction",
+      paragraphs: [
+        "When Nigerian banks, development finance institutions, or regulated fintechs evaluate blockchain for asset tokenization, they are not evaluating Bitcoin or Ethereum. They are evaluating permissioned blockchain infrastructure — systems where participation is controlled, identity is known, and the rules of the network are set by the consortium operating it.",
+        "Hyperledger is the primary open-source framework for this category of blockchain deployment. Maintained by the Linux Foundation with contributions from IBM, Intel, and dozens of financial institutions globally, Hyperledger Fabric and Hyperledger Besu are the two most widely deployed permissioned blockchain platforms in financial services.",
+        "This article explains how they work, what they enable for asset tokenization, and what African financial institutions need to consider when evaluating them for deployment.",
+      ],
+    },
+    {
+      heading: "Permissioned vs permissionless: why it matters for financial institutions",
+      paragraphs: [
+        "Public blockchains like Bitcoin and Ethereum are permissionless — anyone can participate, validate transactions, and read the ledger. That openness is a feature for censorship resistance and decentralization. It is a problem for regulated financial institutions that need to know who they are transacting with, control who can access sensitive financial data, and comply with AML/KYC requirements.",
+        "Permissioned blockchains solve this by requiring all participants to be identified and approved before joining the network. Transaction validation is performed by a known set of organizations rather than anonymous miners or validators. Data visibility can be restricted to the parties involved in a transaction. The network rules are governed by the consortium rather than by open-source protocol upgrades.",
+        "For a Nigerian bank tokenizing trade finance receivables, or a development finance institution issuing digital bonds, or a central bank exploring a wholesale CBDC, the permissioned model is not a compromise — it is the appropriate architecture.",
+      ],
+    },
+    {
+      heading: "Hyperledger Fabric: the enterprise standard",
+      paragraphs: [
+        "Hyperledger Fabric is the most widely deployed enterprise blockchain platform globally. Its architecture is designed specifically for the requirements of financial institutions: modular consensus, private data collections, channel-based data isolation, and chaincode (smart contract) execution in isolated containers.",
+        "The key architectural features that matter for asset tokenization are channels and private data collections. Channels allow different subsets of network participants to maintain separate ledgers — a bank and its counterparty can transact on a channel that is invisible to other network members. Private data collections allow specific fields in a transaction to be shared only with designated parties while a hash of the data is recorded on the shared ledger for auditability.",
+        "For tokenizing assets like trade receivables, invoice financing instruments, or interbank settlement tokens, this granular data privacy is essential. The parties to a transaction need full visibility. Regulators need auditability. Competitors on the same network need neither.",
+      ],
+    },
+    {
+      heading: "Hyperledger Besu: EVM compatibility for regulated networks",
+      paragraphs: [
+        "Hyperledger Besu is an Ethereum client designed for enterprise use. It supports the full Ethereum Virtual Machine, which means Solidity smart contracts written for Ethereum can be deployed on a Besu network without modification. It supports permissioned network configurations, private transactions through the Tessera privacy manager, and multiple consensus algorithms suited to enterprise deployments.",
+        "The practical advantage of Besu for institutions that have already invested in Ethereum tooling and developer expertise is significant. The same smart contract code, the same development tools, and the same token standards (ERC-20, ERC-721, ERC-1400 for security tokens) work on a private Besu network as on public Ethereum — but with controlled participation, private transactions, and no gas market.",
+        "ERC-1400 is particularly relevant for asset tokenization in regulated markets. It is a security token standard that encodes transfer restrictions, compliance rules, and forced transfer capabilities directly into the token contract — enabling the kind of regulatory compliance that public Ethereum tokens cannot easily accommodate.",
+      ],
+    },
+    {
+      heading: "Asset tokenization use cases for African financial institutions",
+      list: [
+        "Trade finance: tokenizing letters of credit, bills of lading, and trade receivables on a permissioned network shared by banks, importers, exporters, and logistics providers — reducing settlement time from weeks to hours",
+        "Interbank settlement: replacing correspondent banking relationships with a shared settlement token on a central bank-operated Fabric network, enabling real-time gross settlement between member banks",
+        "Digital bonds: issuing government or corporate bonds as tokens on a permissioned network, enabling fractional ownership, automated coupon payments through smart contracts, and secondary market trading among licensed participants",
+        "Commodity-backed tokens: tokenizing warehouse receipts for agricultural commodities on a network shared by commodity exchanges, warehouses, banks, and traders — enabling instant financing against verified inventory",
+        "Mortgage and property tokens: representing property ownership as tokens on a land registry network, enabling fractional investment and reducing the friction of property transfer",
+      ],
+    },
+    {
+      heading: "Deployment considerations for Africa",
+      paragraphs: [
+        "The technical deployment of Hyperledger Fabric or Besu is well-documented and supported by a mature ecosystem of system integrators. The harder challenges in African deployments are institutional and infrastructural.",
+      ],
+      list: [
+        "Consortium formation: a permissioned network requires multiple organizations to agree on governance, node operation responsibilities, and the rules for adding or removing participants. This is a legal and organizational challenge as much as a technical one.",
+        "Node infrastructure: each participating organization needs to operate one or more nodes. In markets with unreliable power and connectivity, node uptime requirements need to be designed around realistic infrastructure constraints.",
+        "Regulatory engagement: deploying a tokenization network that involves regulated financial instruments requires early and ongoing engagement with the SEC, CBN, or relevant regulatory body. The technology is ready; the regulatory framework is still developing.",
+        "Interoperability: a tokenization network that cannot connect to existing core banking systems, payment rails, or other blockchain networks has limited utility. Integration with NIBSS, Paystack, or SWIFT should be part of the architecture from the start.",
+        "Legal enforceability: the smart contract rules governing token transfers need to be legally enforceable in Nigerian courts. This requires careful drafting of the legal agreements that sit alongside the technical contracts.",
+      ],
+    },
+    {
+      heading: "The opportunity",
+      paragraphs: [
+        "African financial institutions are not behind on blockchain adoption because the technology is not ready. They are behind because the institutional coordination required to deploy permissioned networks is hard, and because the regulatory frameworks are still catching up to the technical possibilities.",
+        "Both of those constraints are loosening. The SEC Nigeria's digital asset framework, the CBN's engagement with digital currency infrastructure, and the growing number of African banks with dedicated blockchain teams all point toward a deployment window that is opening rather than closing.",
+        "The institutions that build the technical capability and regulatory relationships now — before the window is fully open — will be positioned to operate the infrastructure that others depend on. That is a structurally advantaged position in any market.",
+      ],
+    },
+  ],
+};
+
 export const blogArticles = [
   movingCertaintyArticle,
   posGpsArticle,
+  hyperledgerTokenizationArticle,
   assetTokenizationArticle,
+  stablecoinArticle,
+  bitcoinWalletArticle,
+  rgbProtocolArticle,
   learningProgrammingArticle,
   erpIntegrationArticle,
   mobileWebAppArticle,
