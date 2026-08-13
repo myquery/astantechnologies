@@ -1,1 +1,39 @@
-self.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:[],pages:{"/":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/773-1d1c866b07d0f268.js","static/chunks/734-51496435023e203d.js","static/chunks/927-696416dcec2b4ef3.js","static/chunks/pages/index-236b5ed6258a90ab.js"],"/_app":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/css/0cb417ac8b5272e4.css","static/chunks/pages/_app-7726bc0ffbf01c30.js"],"/_error":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/pages/_error-7a92967bea80186d.js"],"/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/734-51496435023e203d.js","static/chunks/pages/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares-c43ee3ddff90fe79.js"],"/blog/asset-tokenization-financing-problem-nobody-talks-about":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/734-51496435023e203d.js","static/chunks/pages/blog/asset-tokenization-financing-problem-nobody-talks-about-3531cd2d130071f9.js"],"/landing":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/773-1d1c866b07d0f268.js","static/chunks/734-51496435023e203d.js","static/chunks/927-696416dcec2b4ef3.js","static/chunks/pages/landing-d5a4a4d23011ff25.js"],"/privacy-policy":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/pages/privacy-policy-cc8643d0cc658b8c.js"],"/terms-of-service":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/pages/terms-of-service-f34067484d7aba9c.js"],"/user-data-deletion":["static/chunks/webpack-8fa1640cc84ba8fe.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-8c363112dd6989ed.js","static/chunks/pages/user-data-deletion-3726877db193eaa1.js"]},ampFirstPages:[]},self.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+self.__BUILD_MANIFEST = {
+  "polyfillFiles": [
+    "static/chunks/polyfills.js"
+  ],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_app": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+    ],
+    "/blog": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/blog.js"
+    ],
+    "/blog/asset-tokenization-financing-problem-nobody-talks-about": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/blog/asset-tokenization-financing-problem-nobody-talks-about.js"
+    ]
+  },
+  "ampFirstPages": []
+};
+self.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];

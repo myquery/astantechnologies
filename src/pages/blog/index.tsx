@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Navigation from "../components/Navigation";
-import { blogArticles } from "../data/blogArticles";
+import Navigation from "../../components/Navigation";
+import { blogArticles } from "../../data/blogArticles";
 
 export default function BlogIndexPage() {
   return (

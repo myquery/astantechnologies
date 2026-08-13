@@ -1,1 +1,8 @@
-{"/_app":"pages/_app.js","/_error":"pages/_error.js","/_document":"pages/_document.js","/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares":"pages/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares.html","/blog/asset-tokenization-financing-problem-nobody-talks-about":"pages/blog/asset-tokenization-financing-problem-nobody-talks-about.html","/":"pages/index.html","/landing":"pages/landing.html","/privacy-policy":"pages/privacy-policy.html","/terms-of-service":"pages/terms-of-service.html","/user-data-deletion":"pages/user-data-deletion.html","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/blog": "pages/blog.js",
+  "/blog/asset-tokenization-financing-problem-nobody-talks-about": "pages/blog/asset-tokenization-financing-problem-nobody-talks-about.js",
+  "/": "pages/index.js"
+}
