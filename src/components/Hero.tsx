@@ -180,33 +180,36 @@ const serviceCards: ServiceCard[] = [
 
 const focusLanes: FocusLane[] = [
   {
-    title: "Product launches",
+    title: "Software Development",
     description:
-      "For startups and teams releasing new customer-facing products with strong design and dependable engineering.",
+      "Building products, automating operations, and engineering systems for Nigerian and African businesses.",
     bullets: [
-      "Web platforms",
-      "Mobile experiences",
-      "Wallet-connected interfaces",
+      "Web & mobile apps",
+      "ERP & CRM integration",
+      "Enterprise platforms",
+      "Shopify commerce",
     ],
   },
   {
-    title: "Blockchain systems",
+    title: "Blockchain & Web3",
     description:
-      "For organizations introducing crypto, Bitcoin, or web3 features without losing the clarity users expect.",
+      "Asset tokenization, Bitcoin wallets, stablecoins, RGB protocol, and decentralized infrastructure for African markets.",
     bullets: [
-      "Crypto wallets",
-      "Bitcoin application flows",
-      "Web3 product architecture",
+      "Bitcoin wallet development",
+      "Asset tokenization",
+      "Stablecoin integration",
+      "RGB protocol",
     ],
   },
   {
-    title: "Commerce and operations",
+    title: "Fintech & Payments",
     description:
-      "For brands and institutions modernizing commerce, enterprise processes, and the people running them.",
+      "Payment infrastructure, settlement certainty, Hyperledger tokenization, and financial technology in Africa.",
     bullets: [
-      "Shopify storefronts",
-      "Enterprise applications",
-      "Custom training programs",
+      "Payment gateway integration",
+      "POS & geo-tagging systems",
+      "Hyperledger asset tokenization",
+      "Settlement infrastructure",
     ],
   },
 ];
@@ -275,28 +278,28 @@ const introHeroSlide: HeroSlide = {
 const heroSlides: HeroSlide[] = [
   introHeroSlide,
   {
-    id: "web-mobile-ai",
+    id: "software-development",
     eyebrow: "Delivery lane",
     counter: "01 / 03",
-    title: "Web, mobile & AI-integrated apps",
+    title: "Software Development",
     description:
-      "Customer-facing products, AI-assisted workflows, and operational apps shaped for real use.",
+      "Web apps, mobile apps, ERP integration, Shopify commerce, and enterprise platforms built for Nigerian and African businesses.",
   },
   {
-    id: "crypto-web3",
+    id: "blockchain-web3",
     eyebrow: "Delivery lane",
     counter: "02 / 03",
-    title: "Crypto & web3",
+    title: "Blockchain & Web3",
     description:
-      "Wallets, Bitcoin flows, and on-chain experiences without product friction.",
+      "Bitcoin wallets, asset tokenization, stablecoin integration, RGB protocol, and on-chain infrastructure for African markets.",
   },
   {
-    id: "commerce-enterprise",
+    id: "fintech-payments",
     eyebrow: "Delivery lane",
     counter: "03 / 03",
-    title: "Commerce & enterprise",
+    title: "Fintech & Payments",
     description:
-      "Shopify builds, internal systems, and training that supports adoption.",
+      "Payment infrastructure, POS systems, Hyperledger asset tokenization, and settlement certainty for African financial institutions.",
   },
 ];
 

@@ -4,6 +4,5 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/blog": "pages/blog.js",
-  "/blog/stablecoins-africa-business-use-cases-nigeria": "pages/blog/stablecoins-africa-business-use-cases-nigeria.js",
-  "/blog/asset-tokenization-financing-problem-nobody-talks-about": "pages/blog/asset-tokenization-financing-problem-nobody-talks-about.js"
+  "/blog/stablecoins-africa-business-use-cases-nigeria": "pages/blog/stablecoins-africa-business-use-cases-nigeria.js"
 }
