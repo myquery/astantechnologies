@@ -5,13 +5,32 @@ export type BlogArticleSection = {
   orderedList?: string[];
 };
 
+export type Pillar = "software-development" | "blockchain" | "fintech";
+
+export const PILLARS: Record<Pillar, { label: string; description: string; href: string }> = {
+  "software-development": {
+    label: "Software Development",
+    description: "Building products, automating operations, and engineering systems for Nigerian businesses.",
+    href: "/blog/software-development/",
+  },
+  blockchain: {
+    label: "Blockchain & Web3",
+    description: "Asset tokenization, smart contracts, and decentralized infrastructure for African markets.",
+    href: "/blog/blockchain/",
+  },
+  fintech: {
+    label: "Fintech & Payments",
+    description: "Payment infrastructure, settlement certainty, and financial technology in Africa.",
+    href: "/blog/fintech/",
+  },
+};
+
 export type BlogArticle = {
   slug: string;
   href: string;
   title: string;
   category: string;
-  author: string;
-  authorTitle: string;
+  pillar: Pillar;
   date: string;
   description: string;
   sections: BlogArticleSection[];
@@ -23,9 +42,7 @@ export const learningProgrammingArticle: BlogArticle = {
   title:
     "6 Essential Hacks Every Beginner Must Master to Learn Any Programming Language And Build Softwares",
   category: "Learning systems",
-  author: "Stanley Arua",
-  authorTitle:
-    "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "software-development",
   date: "March 27, 2026",
   description:
     "A practical guide to the six concepts that help beginners move beyond tutorial hell and start thinking like developers.",
@@ -170,9 +187,7 @@ export const assetTokenizationArticle: BlogArticle = {
   href: "/blog/asset-tokenization-financing-problem-nobody-talks-about/",
   title: "Asset Tokenization and the Financing Problem Nobody Talks About",
   category: "Asset tokenization",
-  author: "Stanley Arua",
-  authorTitle:
-    "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "blockchain",
   date: "May 20, 2026",
   description:
     "A research-backed case for asset tokenization as financing infrastructure for Nigerian and African firms.",
@@ -323,8 +338,7 @@ export const erpIntegrationArticle: BlogArticle = {
   href: "/blog/custom-erp-integration-business-automation-nigeria/",
   title: "Custom ERP Integration: How Nigerian Businesses Are Automating Operations",
   category: "Business automation",
-  author: "Stanley Arua",
-  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "software-development",
   date: "June 10, 2026",
   description: "A practical guide to ERP and CRM integration for Nigerian businesses looking to automate workflows and reduce manual overhead.",
   sections: [
@@ -407,8 +421,7 @@ export const mobileWebAppArticle: BlogArticle = {
   href: "/blog/mobile-web-app-development-nigeria-guide/",
   title: "Building Mobile and Web Apps in Nigeria: What Founders Need to Know",
   category: "App development",
-  author: "Stanley Arua",
-  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "software-development",
   date: "June 24, 2026",
   description: "A founder's guide to commissioning mobile and web app development in Nigeria — what to expect, what to avoid, and how to get a product that actually ships.",
   sections: [
@@ -477,8 +490,7 @@ export const blockchainBusinessArticle: BlogArticle = {
   href: "/blog/blockchain-app-development-business-use-cases-nigeria/",
   title: "Blockchain App Development: Real Business Use Cases for Nigerian Companies",
   category: "Blockchain",
-  author: "Stanley Arua",
-  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "blockchain",
   date: "July 8, 2026",
   description: "A practical look at how Nigerian businesses are using blockchain applications beyond cryptocurrency — from supply chain to payments to digital identity.",
   sections: [
@@ -552,8 +564,7 @@ export const posGpsArticle: BlogArticle = {
   href: "https://medium.com/@ibearua/optimizing-pos-terminal-gps-performance-for-geo-tagging-compliance-2862c2c86133",
   title: "Optimizing POS Terminal GPS Performance for Geo-Tagging Compliance",
   category: "Fintech",
-  author: "Stanley Arua",
-  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "fintech",
   date: "2024",
   description: "A technical deep-dive into optimizing GPS performance on POS terminals for accurate geo-tagging and regulatory compliance in fintech deployments.",
   sections: [],
@@ -564,8 +575,7 @@ export const movingCertaintyArticle: BlogArticle = {
   href: "https://medium.com/@ibearua/moving-money-is-solved-moving-certainty-is-next-8e7f8db84aa3",
   title: "Moving Money is Solved. Moving Certainty is Next.",
   category: "Fintech",
-  author: "Stanley Arua",
-  authorTitle: "Software Developer, Blockchain Developer/Entrepreneur, AI enthusiast",
+  pillar: "fintech",
   date: "2024",
   description: "Why the next frontier in financial infrastructure is not payment speed but settlement certainty — and what that means for builders in Africa.",
   sections: [],

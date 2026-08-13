@@ -1,8 +1,18 @@
+"use client";
 import Head from "next/head";
+import { useState } from "react";
 import Navigation from "../../components/Navigation";
-import { blogArticles } from "../../data/blogArticles";
+import { blogArticles, PILLARS, type Pillar } from "../../data/blogArticles";
+
+const ALL = "all" as const;
+type Filter = Pillar | typeof ALL;
 
 export default function BlogIndexPage() {
+  const [active, setActive] = useState<Filter>(ALL);
+
+  const filtered =
+    active === ALL ? blogArticles : blogArticles.filter((a) => a.pillar === active);
+
   return (
     <>
       <Head>
@@ -38,17 +48,51 @@ export default function BlogIndexPage() {
                   Blog
                 </h1>
                 <p className="mt-5 text-lg leading-8 text-slate-300">
-                  Practical writing on software development, blockchain, fintech, ERP integration, and building technology products in Nigeria and Africa.
+                  Practical writing on software development, blockchain, fintech, and building technology products in Nigeria and Africa.
                 </p>
+              </div>
+
+              {/* Pillar topic cards */}
+              <div className="mt-12 grid gap-4 sm:grid-cols-3">
+                {(Object.entries(PILLARS) as [Pillar, typeof PILLARS[Pillar]][]).map(([key, pillar]) => (
+                  <a
+                    key={key}
+                    href={pillar.href}
+                    className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
+                  >
+                    <p className="text-sm font-semibold text-white">{pillar.label}</p>
+                    <p className="mt-1 text-xs leading-5 text-slate-400">{pillar.description}</p>
+                    <p className="mt-3 text-xs font-semibold text-brand-sky">
+                      {blogArticles.filter((a) => a.pillar === key).length} articles →
+                    </p>
+                  </a>
+                ))}
               </div>
             </div>
           </section>
 
-          {/* Articles Grid */}
+          {/* Filter tabs + grid */}
           <section className="bg-brand-paper py-16 sm:py-20">
             <div className="section-shell">
+              {/* Tabs */}
+              <div className="flex flex-wrap gap-2 mb-10">
+                {([ALL, ...Object.keys(PILLARS)] as Filter[]).map((key) => (
+                  <button
+                    key={key}
+                    onClick={() => setActive(key)}
+                    className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
+                      active === key
+                        ? "border-primary bg-primary text-white"
+                        : "border-slate-200 bg-white text-slate-600 hover:border-primary/40 hover:text-primary"
+                    }`}
+                  >
+                    {key === ALL ? "All articles" : PILLARS[key as Pillar].label}
+                  </button>
+                ))}
+              </div>
+
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                {blogArticles.map((article) => {
+                {filtered.map((article) => {
                   const isExternal = article.href.startsWith("http");
                   return (
                     <article

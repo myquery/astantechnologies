@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Navigation from "./Navigation";
 import type { BlogArticle } from "../data/blogArticles";
+import { blogArticles, PILLARS } from "../data/blogArticles";
 
 type BlogArticlePageProps = {
   article: BlogArticle;
@@ -23,9 +24,9 @@ export default function BlogArticlePage({ article }: BlogArticlePageProps) {
               description: article.description,
               datePublished: article.date,
               author: {
-                '@type': 'Person',
-                name: article.author,
-                jobTitle: article.authorTitle,
+                '@type': 'Organization',
+                name: 'Astan Technologies',
+                url: 'https://www.astantechnologies.com',
               },
               publisher: {
                 '@type': 'Organization',
@@ -55,7 +56,7 @@ export default function BlogArticlePage({ article }: BlogArticlePageProps) {
 
             <div className="section-shell relative">
               <a
-                href="/#blog"
+                href="/blog"
                 className="inline-flex items-center text-sm font-semibold text-slate-300 transition hover:text-white"
               >
                 <span className="mr-2" aria-hidden="true">
@@ -75,9 +76,7 @@ export default function BlogArticlePage({ article }: BlogArticlePageProps) {
                   {article.description}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-slate-400">
-                  <span>{article.author}</span>
-                  <span aria-hidden="true">/</span>
-                  <span>{article.authorTitle}</span>
+                  <span>Astan Technologies</span>
                   <span aria-hidden="true">/</span>
                   <time>{article.date}</time>
                 </div>
@@ -163,6 +162,61 @@ export default function BlogArticlePage({ article }: BlogArticlePageProps) {
               </article>
             </div>
           </section>
+
+          {/* Related articles */}
+          {(() => {
+            const related = blogArticles.filter(
+              (a) => a.pillar === article.pillar && a.slug !== article.slug
+            ).slice(0, 3);
+            if (!related.length) return null;
+            return (
+              <section className="bg-brand-paper py-16 sm:py-20">
+                <div className="section-shell">
+                  <p className="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+                    {PILLARS[article.pillar].label}
+                  </p>
+                  <h2 className="mt-3 font-display text-2xl font-semibold tracking-[-0.03em] text-slate-950">
+                    Related articles
+                  </h2>
+                  <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    {related.map((rel) => {
+                      const isExternal = rel.href.startsWith("http");
+                      return (
+                        <a
+                          key={rel.slug}
+                          href={rel.href}
+                          target={isExternal ? "_blank" : undefined}
+                          rel={isExternal ? "noreferrer" : undefined}
+                          className="flex flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_20px_70px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300"
+                        >
+                          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+                            {rel.category}
+                          </p>
+                          <h3 className="mt-3 font-display text-lg font-semibold tracking-[-0.03em] text-slate-950 flex-1">
+                            {rel.title}
+                          </h3>
+                          <p className="mt-2 text-sm leading-6 text-slate-600 line-clamp-2">
+                            {rel.description}
+                          </p>
+                          <p className="mt-4 text-sm font-semibold text-slate-900">
+                            Read {isExternal ? "↗" : "->"}
+                          </p>
+                        </a>
+                      );
+                    })}
+                  </div>
+                  <div className="mt-8">
+                    <a
+                      href={PILLARS[article.pillar].href}
+                      className="inline-flex items-center text-sm font-semibold text-primary transition hover:underline"
+                    >
+                      All {PILLARS[article.pillar].label} articles →
+                    </a>
+                  </div>
+                </div>
+              </section>
+            );
+          })()}
         </main>
       </div>
     </>
