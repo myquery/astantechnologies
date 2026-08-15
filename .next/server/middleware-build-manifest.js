@@ -28,11 +28,6 @@ self.__BUILD_MANIFEST = {
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/blog.js"
-    ],
-    "/blog/stablecoins-africa-business-use-cases-nigeria": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/blog/stablecoins-africa-business-use-cases-nigeria.js"
     ]
   },
   "ampFirstPages": []
