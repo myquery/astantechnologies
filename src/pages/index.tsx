@@ -3,28 +3,23 @@ import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 
 const keywords = [
-  // Core services
-  'business automation solutions', 'custom ERP integration', 'enterprise app development',
-  // Platforms
-  'mobile app development Nigeria', 'web app development', 'desktop app development',
-  // Web3
-  'blockchain app development', 'dApp development', 'DeFi solutions Nigeria',
-  // Long-tail
-  'technology partner for startups', 'custom software development company Nigeria',
-  'business process automation', 'CRM integration services',
+  'operational technology solutions', 'business process automation', 'enterprise integration',
+  'AI automation', 'custom software development', 'operational systems',
+  'ERP integration', 'workflow automation', 'system integration',
+  'operational bottleneck', 'technology solutions company', 'business operations technology',
 ];
 
 export default function Home() {
   return (
     <>
       <NextSeo
-        title="Astan Technologies | Business Automation & App Development Nigeria"
-        description="Astan Technologies is your technology partner for business automation, ERP integrations, mobile, web, desktop app development, and blockchain solutions in Nigeria."
+        title="Astan Technologies | Operational Technology Solutions"
+        description="Astan identifies costly operational bottlenecks in growing businesses and designs the right technology solution to remove them — combining software, AI, automation, integrations and existing platforms."
         canonical="https://www.astantechnologies.com"
         openGraph={{
           url: 'https://www.astantechnologies.com',
-          title: 'Astan Technologies | Business Automation & App Development',
-          description: 'Custom software, ERP integrations, and blockchain solutions for modern businesses.',
+          title: 'Astan Technologies | Operational Technology Solutions',
+          description: 'Astan identifies operational bottlenecks and delivers the technology solution to remove them — software, AI, automation, integrations or a combination.',
           images: [{ url: '/assets/images/bkg.jpg', alt: 'Astan Technologies' }],
           siteName: 'Astan Technologies',
         }}

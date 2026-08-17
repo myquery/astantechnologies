@@ -9,18 +9,18 @@ export type Pillar = "software-development" | "blockchain" | "fintech";
 
 export const PILLARS: Record<Pillar, { label: string; description: string; href: string }> = {
   "software-development": {
-    label: "Software Development",
-    description: "Building products, automating operations, and engineering systems for Nigerian businesses.",
+    label: "Operations & Systems",
+    description: "Building products, automating operations, and engineering systems for growing businesses.",
     href: "/blog/software-development/",
   },
   blockchain: {
-    label: "Blockchain & Web3",
-    description: "Asset tokenization, smart contracts, and decentralized infrastructure for African markets.",
+    label: "Blockchain & Digital Assets",
+    description: "Asset tokenization, smart contracts, and specialized technology for African markets.",
     href: "/blog/blockchain/",
   },
   fintech: {
-    label: "Fintech & Payments",
-    description: "Payment infrastructure, settlement certainty, and financial technology in Africa.",
+    label: "Integration & Payments",
+    description: "Payment infrastructure, system integration, and financial technology in Africa.",
     href: "/blog/fintech/",
   },
 };

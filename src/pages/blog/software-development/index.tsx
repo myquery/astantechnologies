@@ -9,9 +9,9 @@ export default function SoftwareDevelopmentPillar() {
   return (
     <>
       <Head>
-        <title>{pillar.label} in Nigeria | Astan Technologies Blog</title>
+        <title>{pillar.label} | Astan Technologies Blog</title>
         <meta name="description" content={pillar.description} />
-        <meta name="keywords" content="software development Nigeria, custom ERP integration, mobile app development Nigeria, web app development, programming" />
+        <meta name="keywords" content="operations and enterprise systems, custom ERP integration, business process automation, internal applications, workflow automation" />
       </Head>
 
       <div className="min-h-screen bg-brand-paper text-slate-900">

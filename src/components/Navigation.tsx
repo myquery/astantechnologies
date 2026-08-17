@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const navigationItems = [
-  { label: "Services", href: "/#services" },
+  { label: "How We Work", href: "/#how-we-work" },
+  { label: "Work", href: "/#work" },
+  { label: "Capabilities", href: "/#capabilities" },
   { label: "Research", href: "/#research" },
-  { label: "Capabilities", href: "/#approach" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navigation() {
@@ -52,7 +52,7 @@ export default function Navigation() {
 
             <div className="hidden items-center gap-3 md:flex">
               <a
-                href="mailto:dev@astantechnologies.com?subject=Project%20Inquiry%20for%20Astan%20Technologies"
+                href="mailto:dev@astantechnologies.com?subject=Operational%20Problem%20-%20Astan%20Technologies"
                 className="text-sm font-medium text-slate-300 transition hover:text-white"
               >
                 dev@astantechnologies.com
@@ -61,7 +61,7 @@ export default function Navigation() {
                 href="/#contact"
                 className="primary-button px-5 py-2.5 text-sm"
               >
-                Start a project
+                Discuss a problem
               </a>
             </div>
 
@@ -90,11 +90,11 @@ export default function Navigation() {
               ))}
 
               <a
-                href="mailto:dev@astantechnologies.com?subject=Project%20Inquiry%20for%20Astan%20Technologies"
+                href="/#contact"
                 className="primary-button mt-2 w-full"
                 onClick={closeMenu}
               >
-                Email Astan
+                Discuss a problem
               </a>
             </div>
           ) : null}

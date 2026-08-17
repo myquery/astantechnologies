@@ -39,7 +39,7 @@ export default function BlogArticlePage({ article }: BlogArticlePageProps) {
               },
               url: `https://www.astantechnologies.com${article.href}`,
               articleSection: article.category,
-              keywords: article.category,
+              keywords: `${article.category}, operational technology, business automation, Astan Technologies`,
             }),
           }}
         />

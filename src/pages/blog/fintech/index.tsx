@@ -9,9 +9,9 @@ export default function FintechPillar() {
   return (
     <>
       <Head>
-        <title>{pillar.label} in Africa | Astan Technologies Blog</title>
+        <title>{pillar.label} | Astan Technologies Blog</title>
         <meta name="description" content={pillar.description} />
-        <meta name="keywords" content="fintech Nigeria, payments Africa, POS terminal Nigeria, settlement infrastructure, financial technology Africa" />
+        <meta name="keywords" content="payment systems integration, financial technology, reconciliation, enterprise integration, settlement infrastructure" />
       </Head>
 
       <div className="min-h-screen bg-brand-paper text-slate-900">

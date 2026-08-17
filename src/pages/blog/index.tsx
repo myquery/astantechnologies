@@ -19,7 +19,7 @@ export default function BlogIndexPage() {
         <title>Blog | Astan Technologies</title>
         <meta
           name="description"
-          content="Articles from Astan Technologies on software development, blockchain, fintech, ERP integration, and building technology products in Nigeria."
+          content="Research and field notes from Astan Technologies on operational technology solutions, business process automation, integration, AI, and building technology products."
         />
       </Head>
 
@@ -48,7 +48,7 @@ export default function BlogIndexPage() {
                   Blog
                 </h1>
                 <p className="mt-5 text-lg leading-8 text-slate-300">
-                  Practical writing on software development, blockchain, fintech, and building technology products in Nigeria and Africa.
+                  Research and writing from Astan&apos;s work in operational technology, integration, automation, and building technology products.
                 </p>
               </div>
 

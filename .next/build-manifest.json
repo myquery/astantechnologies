@@ -1,36 +1,154 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-42372ed130431b0a.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
+  "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/Q2Rt5NiNJXhg1_B0tElp7/_buildManifest.js",
+    "static/Q2Rt5NiNJXhg1_B0tElp7/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/261-5ab33fb91d0a5215.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/927-ac85fb95ccd19f9b.js",
+      "static/chunks/pages/index-ac88ca686d30de31.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/css/1fd239f97debb30d.css",
+      "static/chunks/pages/_app-623e31de00ba2716.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/pages/_error-7a92967bea80186d.js"
     ],
     "/blog": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/blog.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog-9eaceee24e40f5e4.js"
+    ],
+    "/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/6-essential-hacks-every-beginner-must-master-programming-language-build-softwares-fc27e15fb010d6ef.js"
+    ],
+    "/blog/asset-tokenization-financing-problem-nobody-talks-about": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/asset-tokenization-financing-problem-nobody-talks-about-ab99b444db3858fe.js"
+    ],
+    "/blog/bitcoin-wallet-development-nigeria-guide": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/bitcoin-wallet-development-nigeria-guide-99629620f03353cd.js"
+    ],
+    "/blog/blockchain": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/blockchain-3834cc551a5637c4.js"
+    ],
+    "/blog/blockchain-app-development-business-use-cases-nigeria": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/blockchain-app-development-business-use-cases-nigeria-62fb6a763f676659.js"
+    ],
+    "/blog/custom-erp-integration-business-automation-nigeria": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/custom-erp-integration-business-automation-nigeria-ebd5d1383b027347.js"
+    ],
+    "/blog/fintech": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/fintech-a57fc18bf2b78d7a.js"
+    ],
+    "/blog/hyperledger-asset-tokenization-enterprise-africa": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/hyperledger-asset-tokenization-enterprise-africa-6cf227ec2cd1a765.js"
+    ],
+    "/blog/mobile-web-app-development-nigeria-guide": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/mobile-web-app-development-nigeria-guide-483ec10a162b3941.js"
+    ],
+    "/blog/rgb-protocol-asset-tokenization-bitcoin": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/rgb-protocol-asset-tokenization-bitcoin-5e28d3349256032b.js"
+    ],
+    "/blog/software-development": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/software-development-fa85b87b2d9de22f.js"
+    ],
+    "/blog/stablecoins-africa-business-use-cases-nigeria": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/pages/blog/stablecoins-africa-business-use-cases-nigeria-7ba9c3d4524cef45.js"
+    ],
+    "/landing": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/261-5ab33fb91d0a5215.js",
+      "static/chunks/734-4c63678e206baa30.js",
+      "static/chunks/927-ac85fb95ccd19f9b.js",
+      "static/chunks/pages/landing-4a8e34f22d757250.js"
+    ],
+    "/privacy-policy": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/pages/privacy-policy-b1094b1a04aa92d4.js"
+    ],
+    "/terms-of-service": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/pages/terms-of-service-3a47ac5429ca76bb.js"
+    ],
+    "/user-data-deletion": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-8c363112dd6989ed.js",
+      "static/chunks/pages/user-data-deletion-06d3ac9790a38df7.js"
     ]
   },
   "ampFirstPages": []

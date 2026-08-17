@@ -9,9 +9,9 @@ export default function BlockchainPillar() {
   return (
     <>
       <Head>
-        <title>{pillar.label} in Africa | Astan Technologies Blog</title>
+        <title>{pillar.label} | Astan Technologies Blog</title>
         <meta name="description" content={pillar.description} />
-        <meta name="keywords" content="blockchain Nigeria, asset tokenization Africa, smart contracts Nigeria, Web3 Africa, blockchain business use cases" />
+        <meta name="keywords" content="blockchain technology, asset tokenization, smart contracts, digital assets, Bitcoin applications" />
       </Head>
 
       <div className="min-h-screen bg-brand-paper text-slate-900">
