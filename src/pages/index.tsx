@@ -1,6 +1,17 @@
 import { NextSeo } from 'next-seo';
 import Navigation from '../components/Navigation';
-import Hero from '../components/Hero';
+import { Footer } from '../components/Footer';
+import {
+  HeroSection,
+  FrictionSection,
+  ProcessSection,
+  CapabilitiesSection,
+  SolutionComposer,
+  SelectedWork,
+  PrinciplesSection,
+  ResearchSection,
+  ContactSection,
+} from '../components/sections';
 
 const keywords = [
   'operational technology solutions', 'business process automation', 'enterprise integration',
@@ -29,9 +40,20 @@ export default function Home() {
           { name: 'robots', content: 'index, follow' },
         ]}
       />
-      <div className="min-h-screen bg-brand-ink">
+      <div className="bg-brand-ink">
         <Navigation />
-        <Hero />
+        <main id="top">
+          <HeroSection />
+          <FrictionSection />
+          <ProcessSection />
+          <CapabilitiesSection />
+          <SolutionComposer />
+          <SelectedWork />
+          <PrinciplesSection />
+          <ResearchSection />
+          <ContactSection />
+        </main>
+        <Footer />
       </div>
     </>
   );

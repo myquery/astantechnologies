@@ -6,11 +6,27 @@
 
 :root {
   color-scheme: dark;
-  --brand-ink: #08111f;
+  
+  /* Core brand */
+  --brand-ink: #080b0f;
+  --brand-surface: #0e1218;
+  --brand-surface-raised: #131820;
   --brand-blue: #2a3ef4;
   --brand-sky: #5dd3ff;
   --brand-paper: #f5f7fb;
-  --brand-muted: #8ea4c7;
+  --brand-muted: #8c959f;
+  
+  /* Semantic */
+  --foreground: #f2f5f7;
+  --foreground-muted: #8c959f;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  
+  /* Status */
+  --status-success: #22c55e;
+  --status-error: #ef4444;
+  --status-warning: #fbbf24;
+  --status-info: #5dd3ff;
 }
 
 html {
@@ -22,7 +38,7 @@ body {
   margin: 0;
   font-family: "Manrope", system-ui, sans-serif;
   background: var(--brand-ink);
-  color: #0f172a;
+  color: var(--foreground);
 }
 
 * {
@@ -68,6 +84,39 @@ a {
 
   .headline-gradient {
     @apply bg-gradient-to-r from-white via-brand-mist to-brand-sky bg-clip-text text-transparent;
+  }
+  
+  /* Technical grid background */
+  .tech-grid {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  
+  .tech-grid-dense {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  /* System card */
+  .system-card {
+    @apply rounded-2xl border border-white/[0.08] bg-white/[0.02] p-5 backdrop-blur-sm transition-all duration-300;
+  }
+  
+  .system-card:hover {
+    @apply border-white/[0.12] bg-white/[0.04];
+  }
+  
+  /* Process step indicator */
+  .process-step {
+    @apply flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] font-mono text-sm font-semibold text-white/60;
+  }
+  
+  .process-step.active {
+    @apply border-primary/50 bg-primary/15 text-primary;
   }
 }
 

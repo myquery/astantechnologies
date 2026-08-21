@@ -1,0 +1,9 @@
+export { HeroSection } from "./HeroSection";
+export { FrictionSection } from "./FrictionSection";
+export { ProcessSection } from "./ProcessSection";
+export { CapabilitiesSection } from "./CapabilitiesSection";
+export { SolutionComposer } from "./SolutionComposer";
+export { SelectedWork } from "./SelectedWork";
+export { PrinciplesSection } from "./PrinciplesSection";
+export { ResearchSection } from "./ResearchSection";
+export { ContactSection } from "./ContactSection";

@@ -1,12 +1,31 @@
-# Allow all crawlers including AI/LLM bots
+# Astan Technologies — robots.txt
+
+# Default: allow all crawlers
 User-agent: *
 Allow: /
 
-# AI and LLM crawlers
+# Block Next.js internals and non-public paths
+Disallow: /_next/
+Disallow: /api/
+Disallow: /404
+Disallow: /500
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# AI / LLM crawlers — allowed to index public content
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: Claude-Web
@@ -15,19 +34,22 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 # Sitemap
