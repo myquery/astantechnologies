@@ -87,7 +87,7 @@ export default function Navigation() {
               </a>
             </div>
 
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <button
                 type="button"
                 onClick={toggleTheme}
@@ -107,7 +107,7 @@ export default function Navigation() {
               >
                 {menuOpen ? "Close" : "Menu"}
               </button>
-            </div>
+            </div> */}
           </div>
 
           {menuOpen ? (
