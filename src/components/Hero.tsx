@@ -450,43 +450,69 @@ function Hero() {
         <div className="absolute inset-0 opacity-20 [background-image:linear-gradient(rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.12)_1px,transparent_1px)] [background-size:72px_72px]" />
 
         <div className="section-shell relative pt-32 pb-20 sm:pt-36 lg:pt-40 lg:pb-28">
-          <div className="max-w-4xl animate-fade-in">
-            <h1 className="font-display text-5xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              Technology should remove bottlenecks,
-              <span className="headline-gradient block">
-                not create more of them.
-              </span>
-            </h1>
-
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
-              Astan identifies costly operational friction in growing businesses
-              and designs the right technology solution to remove it — combining
-              software, AI, automation, integrations, existing platforms and
-              supporting technology where required.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a href="#contact" className="primary-button">
-                Discuss an operational bottleneck
-              </a>
-              <a
-                href="#how-we-work"
-                className="inline-flex items-center text-sm font-semibold text-slate-300 transition hover:text-white"
-              >
-                See how Astan works
-                <span className="ml-2" aria-hidden="true">
-                  →
+          <div className="grid lg:grid-cols-2 lg:items-center lg:gap-12">
+            <div className="max-w-2xl animate-fade-in">
+              <h1 className="font-display text-3xl font-semibold leading-[1.1] tracking-[-0.04em] sm:text-4xl lg:text-[2.75rem]">
+                Technology should remove bottlenecks,
+                <span className="headline-gradient block">
+                  not create more of them.
                 </span>
-              </a>
+              </h1>
+
+              <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+                Astan identifies costly operational friction in growing businesses
+                and designs the right technology solution to remove it — combining
+                software, AI, automation, integrations, existing platforms and
+                supporting technology where required.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a href="#contact" className="primary-button">
+                  Discuss an operational bottleneck
+                </a>
+                <a
+                  href="#how-we-work"
+                  className="inline-flex items-center text-sm font-semibold text-slate-300 transition hover:text-white"
+                >
+                  See how Astan works
+                  <span className="ml-2" aria-hidden="true">
+                    →
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            {/* Motion element on the right */}
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl animate-pulse-slow" />
+                <div className="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-brand-sky/30 blur-2xl animate-floaty" />
+                <div className="relative grid grid-cols-2 gap-4">
+                  {["Diagnose", "Architect", "Build", "Deliver"].map((phase, index) => (
+                    <motion.div
+                      key={phase}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2 + index * 0.15 }}
+                      className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 backdrop-blur-sm"
+                    >
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20 font-mono text-xs font-semibold text-brand-sky">
+                        {index + 1}
+                      </span>
+                      <p className="mt-3 text-sm font-medium text-white">{phase}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Operating model visual */}
+          {/* Operating model visual - mobile only */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            className="mt-14"
+            className="mt-14 lg:hidden"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-sky">
               How we work

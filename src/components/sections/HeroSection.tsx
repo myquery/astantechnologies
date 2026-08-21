@@ -34,7 +34,7 @@ export function HeroSection() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <h1 className="mt-6 font-display text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
+              <h1 className="mt-6 font-display text-[clamp(2rem,5vw,3rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
                 Technology should remove bottlenecks,
                 <span className="headline-gradient block">
                   not create more of them.
@@ -118,12 +118,12 @@ export function HeroSection() {
           </div>
 
           {/* Right: System Diagram */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-end">
             <motion.div
               initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="relative w-full"
+              className="relative w-full max-w-lg lg:ml-auto"
             >
               {/* Diagram container */}
               <div className="relative w-full rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-sm">
