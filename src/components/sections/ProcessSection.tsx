@@ -254,7 +254,7 @@ export function ProcessSection() {
   }, [shouldReduceMotion]);
 
   return (
-    <section id="how-we-work" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="how-we-work" className="relative overflow-hidden bg-[var(--bg)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid opacity-30" />
       <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-brand-sky/[0.03] blur-[120px]" />
 

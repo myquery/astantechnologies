@@ -4,24 +4,54 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap");
 
-:root {
+:root,
+[data-theme="dark"] {
   color-scheme: dark;
-  
-  /* Core brand */
-  --brand-ink: #080b0f;
+
+  --bg: #080b0f;
+  --bg-alt: #0c1016;
+  --bg-surface: #0e1218;
+  --bg-raised: #131820;
+  --fg: #f2f5f7;
+  --fg-muted: #8c959f;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --nav-bg: rgba(8, 11, 15, 0.75);
+  --nav-border: rgba(255, 255, 255, 0.10);
+  --nav-item-bg: rgba(255, 255, 255, 0.05);
+  --nav-item-hover: rgba(255, 255, 255, 0.10);
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-hover-bg: rgba(255, 255, 255, 0.04);
+  --card-hover-border: rgba(255, 255, 255, 0.12);
+  --grid-line: rgba(255, 255, 255, 0.025);
+  --grid-line-dense: rgba(255, 255, 255, 0.02);
+  --toggle-icon: "☀️";
+
+  /* Semantic text tokens */
+  --t1: rgba(242,245,247,1.00);   /* headings */
+  --t2: rgba(242,245,247,0.75);   /* body */
+  --t3: rgba(242,245,247,0.50);   /* secondary */
+  --t4: rgba(242,245,247,0.35);   /* metadata */
+  --t5: rgba(242,245,247,0.20);   /* faint */
+  /* Semantic border tokens */
+  --b1: rgba(255,255,255,0.10);
+  --b2: rgba(255,255,255,0.06);
+  --b3: rgba(255,255,255,0.03);
+  /* Semantic surface tokens */
+  --s1: rgba(255,255,255,0.04);
+  --s2: rgba(255,255,255,0.02);
+  --s3: rgba(255,255,255,0.06);
   --brand-surface: #0e1218;
   --brand-surface-raised: #131820;
   --brand-blue: #2a3ef4;
   --brand-sky: #5dd3ff;
   --brand-paper: #f5f7fb;
   --brand-muted: #8c959f;
-  
-  /* Semantic */
   --foreground: #f2f5f7;
   --foreground-muted: #8c959f;
   --border: rgba(255, 255, 255, 0.08);
-  --border-subtle: rgba(255, 255, 255, 0.04);
-  
+
   /* Status */
   --status-success: #22c55e;
   --status-error: #ef4444;
@@ -29,16 +59,90 @@
   --status-info: #5dd3ff;
 }
 
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f0f4fa;
+  --bg-alt: #e8edf5;
+  --bg-surface: #ffffff;
+  --bg-raised: #e2e8f2;
+  --fg: #0d1117;
+  --fg-muted: #374151;
+  --border-color: rgba(0, 0, 0, 0.12);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --nav-border: rgba(0, 0, 0, 0.12);
+  --nav-item-bg: rgba(0, 0, 0, 0.05);
+  --nav-item-hover: rgba(0, 0, 0, 0.10);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(0, 0, 0, 0.10);
+  --card-hover-bg: rgba(255, 255, 255, 0.95);
+  --card-hover-border: rgba(42, 62, 244, 0.25);
+  --grid-line: rgba(0, 0, 0, 0.06);
+  --grid-line-dense: rgba(0, 0, 0, 0.04);
+  --toggle-icon: "🌙";
+
+  /* Semantic text tokens */
+  --t1: rgba(13,17,23,1.00);      /* headings */
+  --t2: rgba(13,17,23,0.85);      /* body */
+  --t3: rgba(13,17,23,0.65);      /* secondary */
+  --t4: rgba(13,17,23,0.50);      /* metadata */
+  --t5: rgba(13,17,23,0.35);      /* faint */
+  /* Semantic border tokens */
+  --b1: rgba(13,17,23,0.18);
+  --b2: rgba(13,17,23,0.10);
+  --b3: rgba(13,17,23,0.06);
+  /* Semantic surface tokens */
+  --s1: rgba(13,17,23,0.08);
+  --s2: rgba(13,17,23,0.04);
+  --s3: rgba(13,17,23,0.10);
+  --brand-surface: #ffffff;
+  --brand-surface-raised: #e8edf5;
+  --brand-blue: #2a3ef4;
+  --brand-sky: #0ea5e9;
+  --brand-paper: #f5f7fb;
+  --brand-muted: #374151;
+  --foreground: #0d1117;
+  --foreground-muted: #374151;
+  --border: rgba(0, 0, 0, 0.12);
+
+  /* Status */
+  --status-success: #16a34a;
+  --status-error: #dc2626;
+  --status-warning: #d97706;
+  --status-info: #0ea5e9;
+}
+
 html {
   scroll-behavior: smooth;
-  background: var(--brand-ink);
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   font-family: "Manrope", system-ui, sans-serif;
-  background: var(--brand-ink);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Ensure sections with light backgrounds have dark text in light mode */
+[data-theme="light"] section.bg-brand-paper,
+[data-theme="light"] section.bg-white {
+  color: #0d1117;
+}
+
+[data-theme="light"] section.bg-brand-paper h1,
+[data-theme="light"] section.bg-brand-paper h2,
+[data-theme="light"] section.bg-brand-paper h3,
+[data-theme="light"] section.bg-white h1,
+[data-theme="light"] section.bg-white h2,
+[data-theme="light"] section.bg-white h3 {
+  color: #030712 !important;
+}
+
+[data-theme="light"] section.bg-brand-paper p,
+[data-theme="light"] section.bg-white p {
+  color: #374151 !important;
 }
 
 * {
@@ -89,25 +193,31 @@ a {
   /* Technical grid background */
   .tech-grid {
     background-image:
-      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
     background-size: 48px 48px;
   }
-  
+
   .tech-grid-dense {
     background-image:
-      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      linear-gradient(var(--grid-line-dense) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line-dense) 1px, transparent 1px);
     background-size: 24px 24px;
   }
   
   /* System card */
   .system-card {
-    @apply rounded-2xl border border-white/[0.08] bg-white/[0.02] p-5 backdrop-blur-sm transition-all duration-300;
+    border-radius: 1rem;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    padding: 1.25rem;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s;
   }
-  
+
   .system-card:hover {
-    @apply border-white/[0.12] bg-white/[0.04];
+    border-color: var(--card-hover-border);
+    background: var(--card-hover-bg);
   }
   
   /* Process step indicator */
@@ -118,6 +228,70 @@ a {
   .process-step.active {
     @apply border-primary/50 bg-primary/15 text-primary;
   }
+}
+
+/* ── Semantic text/border/bg tokens used via style= props ── */
+/* These are already defined in :root / [data-theme] blocks above */
+
+/* headline-gradient light override */
+[data-theme="light"] .headline-gradient {
+  background-image: linear-gradient(to right, #0d1117, #1e3a5f, #2a3ef4);
+}
+
+/* process-step light override */
+[data-theme="light"] .process-step {
+  border-color: rgba(13,17,23,0.12);
+  background-color: rgba(13,17,23,0.04);
+  color: rgba(13,17,23,0.55);
+}
+
+/* Light mode: ensure proper backgrounds and text contrast */
+[data-theme="light"] .bg-brand-paper {
+  background-color: #f5f7fb !important;
+}
+
+[data-theme="light"] .bg-white {
+  background-color: #ffffff !important;
+}
+
+[data-theme="light"] .bg-brand-ink {
+  background-color: #08111f !important;
+}
+
+/* Force dark text on light background sections */
+[data-theme="light"] .text-slate-950 {
+  color: #030712 !important;
+}
+
+[data-theme="light"] .text-slate-900 {
+  color: #111827 !important;
+}
+
+[data-theme="light"] .text-slate-700 {
+  color: #1f2937 !important;
+}
+
+[data-theme="light"] .text-slate-600 {
+  color: #374151 !important;
+}
+
+[data-theme="light"] .text-slate-500 {
+  color: #4b5563 !important;
+}
+
+/* Keep light text on dark backgrounds in light mode */
+[data-theme="light"] .bg-brand-ink .text-white,
+[data-theme="light"] .bg-brand-ink .text-slate-300,
+[data-theme="light"] .bg-brand-ink .text-slate-200 {
+  color: inherit !important;
+}
+
+[data-theme="light"] .bg-brand-ink .text-slate-300 {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .bg-brand-ink .text-slate-200 {
+  color: #e2e8f0 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

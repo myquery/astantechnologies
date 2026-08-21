@@ -380,7 +380,7 @@ export function FrictionSection() {
   const activePattern = frictionPatterns.find((p) => p.id === activeId)!;
 
   return (
-    <section id="friction" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="friction" className="relative overflow-hidden bg-[var(--bg-alt)] py-14 lg:py-20">
       {/* Background */}
       <div className="absolute inset-0 tech-grid-dense opacity-40" />
       <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/[0.04] blur-[140px]" />

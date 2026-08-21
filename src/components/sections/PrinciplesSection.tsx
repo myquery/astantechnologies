@@ -31,7 +31,7 @@ export function PrinciplesSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="why-astan" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="why-astan" className="relative overflow-hidden bg-[var(--bg)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid-dense opacity-20" />
       {/* Subtle accent */}
       <div className="absolute left-0 top-1/2 h-px w-full bg-gradient-to-r from-transparent via-white/[0.04] to-transparent" />

@@ -18,7 +18,7 @@ export function ResearchSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="research" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="research" className="relative overflow-hidden bg-[var(--bg-alt)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid opacity-20" />
       {/* Top separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />

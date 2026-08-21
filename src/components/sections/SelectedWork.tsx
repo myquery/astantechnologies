@@ -78,7 +78,7 @@ export function SelectedWork() {
   const active = projects.find((p) => p.id === activeId)!;
 
   return (
-    <section id="work" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="work" className="relative overflow-hidden bg-[var(--bg-alt)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid opacity-25" />
 
       <div className="section-shell relative">

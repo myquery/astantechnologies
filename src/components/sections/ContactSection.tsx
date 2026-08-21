@@ -15,7 +15,7 @@ export function ContactSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="contact" className="relative overflow-hidden bg-[var(--bg)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid opacity-20" />
       {/* Accent glow */}
       <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/[0.06] blur-[140px]" />

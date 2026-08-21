@@ -40,7 +40,7 @@ export default function Home() {
           { name: 'robots', content: 'index, follow' },
         ]}
       />
-      <div className="bg-brand-ink">
+      <div>
         <Navigation />
         <main id="top">
           <HeroSection />

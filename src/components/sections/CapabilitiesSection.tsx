@@ -83,7 +83,7 @@ export function CapabilitiesSection() {
   const active = capabilities.find((c) => c.id === activeId) ?? null;
 
   return (
-    <section id="capabilities" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="capabilities" className="relative overflow-hidden bg-[var(--bg-alt)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid-dense opacity-30" />
       <div className="absolute left-1/4 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-primary/[0.04] blur-[100px]" />
 

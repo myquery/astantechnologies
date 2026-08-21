@@ -527,17 +527,18 @@ function Hero() {
       {/* ─── WHERE GROWTH STARTS BREAKING ─── */}
       <section
         id="problems"
-        className="scroll-mt-28 bg-brand-paper py-24 text-slate-900 sm:py-28"
+        className="scroll-mt-28 py-24 sm:py-28"
+        style={{ background: 'var(--bg-surface)' }}
       >
         <div className="section-shell">
           <div className="max-w-3xl">
-            <span className="eyebrow border-slate-200 bg-white text-slate-500">
+            <span className="eyebrow border-white/10 bg-white/5 text-white/60">
               Where growth starts breaking
             </span>
-            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
               The operational problems that cost you time, money, and momentum.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-400">
               These are the conditions where businesses start losing efficiency
               as they grow. If any of them sound familiar, Astan can help.
             </p>
@@ -547,15 +548,15 @@ function Hero() {
             {problemCards.map((card) => (
               <article
                 key={card.title}
-                className="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_20px_70px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_28px_88px_rgba(15,23,42,0.1)]"
+                className="group rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]"
               >
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-paper text-primary">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-brand-sky">
                   {card.icon}
                 </span>
-                <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.03em] text-slate-950">
+                <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.03em] text-white">
                   {card.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-400">
                   {card.description}
                 </p>
               </article>
@@ -567,18 +568,19 @@ function Hero() {
       {/* ─── HOW WE WORK ─── */}
       <section
         id="how-we-work"
-        className="scroll-mt-28 bg-white py-24 text-slate-900 sm:py-28"
+        className="scroll-mt-28 py-24 sm:py-28"
+        style={{ background: 'var(--bg-alt)' }}
       >
         <div className="section-shell">
           <div className="max-w-3xl">
-            <span className="eyebrow border-slate-200 bg-brand-paper text-slate-500">
+            <span className="eyebrow border-white/10 bg-white/5 text-white/60">
               How we work
             </span>
-            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
               From operational pain to delivered solution — one coordinated
               process.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-400">
               Astan does not start with technology. We start with the problem.
               Every engagement follows a structured path from diagnosis through
               delivery.
@@ -589,15 +591,15 @@ function Hero() {
             {processSteps.map((step) => (
               <article
                 key={step.step}
-                className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.06)]"
+                className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-paper font-mono text-sm font-semibold text-primary shadow-[0_12px_28px_rgba(42,62,244,0.14)]">
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/20 font-mono text-sm font-semibold text-brand-sky">
                   {step.step}
                 </div>
-                <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.03em] text-slate-950">
+                <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.03em] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-400">
                   {step.description}
                 </p>
               </article>
@@ -609,18 +611,19 @@ function Hero() {
       {/* ─── CAPABILITIES ─── */}
       <section
         id="capabilities"
-        className="scroll-mt-28 bg-brand-paper py-24 text-slate-900 sm:py-28"
+        className="scroll-mt-28 py-24 sm:py-28"
+        style={{ background: 'var(--bg-surface)' }}
       >
         <div className="section-shell">
           <div className="max-w-3xl">
-            <span className="eyebrow border-slate-200 bg-white text-slate-500">
+            <span className="eyebrow border-white/10 bg-white/5 text-white/60">
               Capabilities
             </span>
-            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
               The technical capability to match the right solution to the right
               problem.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-400">
               Astan does not have a preferred technology. We have a broad
               capability set that lets us select the right intervention based on
               what the problem actually requires.
@@ -631,24 +634,24 @@ function Hero() {
             {capabilityGroups.map((group) => (
               <article
                 key={group.title}
-                className="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_20px_70px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_28px_88px_rgba(15,23,42,0.1)]"
+                className="group rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]"
               >
                 <span
-                  className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl ${group.toneClass}`}
+                  className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-brand-sky"
                 >
                   {group.icon}
                 </span>
-                <h3 className="mt-5 font-display text-2xl font-semibold tracking-[-0.03em] text-slate-950">
+                <h3 className="mt-5 font-display text-2xl font-semibold tracking-[-0.03em] text-white">
                   {group.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-400">
                   {group.description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-slate-200 bg-brand-paper px-3 py-1.5 text-xs font-medium text-slate-600"
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-300"
                     >
                       {item}
                     </span>
@@ -663,18 +666,19 @@ function Hero() {
       {/* ─── SOLUTION COMPOSITION ─── */}
       <section
         id="solutions"
-        className="scroll-mt-28 bg-white py-24 text-slate-900 sm:py-28"
+        className="scroll-mt-28 py-24 sm:py-28"
+        style={{ background: 'var(--bg-alt)' }}
       >
         <div className="section-shell">
           <div className="max-w-3xl">
-            <span className="eyebrow border-slate-200 bg-brand-paper text-slate-500">
+            <span className="eyebrow border-white/10 bg-white/5 text-white/60">
               Solution composition
             </span>
-            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
               We select the intervention based on the problem — not a preferred
               technology.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-400">
               Most real operational problems require a combination of approaches.
               Astan remains responsible for the architecture and technical
               delivery while external vendors may provide appropriate components.
@@ -685,15 +689,15 @@ function Hero() {
             {solutionModes.map((mode) => (
               <article
                 key={mode.label}
-                className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_28px_88px_rgba(15,23,42,0.1)]"
+                className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]"
               >
-                <span className="inline-flex rounded-full bg-brand-ink px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white">
+                <span className="inline-flex rounded-full bg-primary/20 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-brand-sky">
                   {mode.label}
                 </span>
-                <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.03em] text-slate-950">
+                <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.03em] text-white">
                   {mode.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-400">
                   {mode.description}
                 </p>
               </article>
@@ -705,17 +709,18 @@ function Hero() {
       {/* ─── INDUSTRIES ─── */}
       <section
         id="industries"
-        className="scroll-mt-28 bg-brand-paper py-24 text-slate-900 sm:py-28"
+        className="scroll-mt-28 py-24 sm:py-28"
+        style={{ background: 'var(--bg-surface)' }}
       >
         <div className="section-shell">
           <div className="max-w-3xl">
-            <span className="eyebrow border-slate-200 bg-white text-slate-500">
+            <span className="eyebrow border-white/10 bg-white/5 text-white/60">
               Industries
             </span>
-            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
               Operating environments where Astan is particularly useful.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-400">
               These are not claims of exclusive specialization. They are the
               environments where we have seen the strongest fit between
               operational complexity and the technology solutions we deliver.
@@ -726,12 +731,12 @@ function Hero() {
             {industries.map((industry) => (
               <article
                 key={industry.title}
-                className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.06)]"
+                className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
               >
-                <h3 className="font-display text-xl font-semibold tracking-[-0.03em] text-slate-950">
+                <h3 className="font-display text-xl font-semibold tracking-[-0.03em] text-white">
                   {industry.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-400">
                   {industry.description}
                 </p>
               </article>
@@ -743,17 +748,18 @@ function Hero() {
       {/* ─── WORK / CASE STUDIES ─── */}
       <section
         id="work"
-        className="scroll-mt-28 bg-white py-24 text-slate-900 sm:py-28"
+        className="scroll-mt-28 py-24 sm:py-28"
+        style={{ background: 'var(--bg-alt)' }}
       >
         <div className="section-shell">
           <div className="max-w-3xl">
-            <span className="eyebrow border-slate-200 bg-brand-paper text-slate-500">
+            <span className="eyebrow border-white/10 bg-white/5 text-white/60">
               Selected work
             </span>
-            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-5xl">
+            <h2 className="mt-6 font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
               Real solutions delivered for real operational problems.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-400">
               Each project started with a business problem, moved through our
               diagnostic process, and resulted in a solution composed from the
               right combination of technology.

@@ -24,10 +24,24 @@ const connections = [
   { from: "support", to: "orders" },
 ];
 
+function useThemeColors() {
+  const [dark, setDark] = useState(true);
+  useEffect(() => {
+    const update = () =>
+      setDark(document.documentElement.getAttribute("data-theme") !== "light");
+    update();
+    const observer = new MutationObserver(update);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => observer.disconnect();
+  }, []);
+  return dark;
+}
+
 export function HeroSystemDiagram() {
   const shouldReduceMotion = useReducedMotion();
   const [systemState, setSystemState] = useState<SystemState>("disconnected");
   const [hasAnimated, setHasAnimated] = useState(false);
+  const isDark = useThemeColors();
 
   useEffect(() => {
     if (shouldReduceMotion || hasAnimated) {
@@ -87,15 +101,16 @@ export function HeroSystemDiagram() {
     return "connected";
   };
 
+  const ink = isDark ? "255,255,255" : "13,17,23";
   const nodeColors = {
-    idle: { bg: "rgba(255,255,255,0.04)", border: "rgba(255,255,255,0.1)", text: "rgba(255,255,255,0.4)" },
-    active: { bg: "rgba(42,62,244,0.15)", border: "rgba(42,62,244,0.5)", text: "rgba(255,255,255,0.9)" },
-    error: { bg: "rgba(239,68,68,0.1)", border: "rgba(239,68,68,0.4)", text: "rgba(239,68,68,0.8)" },
+    idle:    { bg: `rgba(${ink},0.04)`, border: `rgba(${ink},0.12)`, text: `rgba(${ink},0.45)` },
+    active:  { bg: "rgba(42,62,244,0.15)", border: "rgba(42,62,244,0.5)", text: isDark ? "rgba(255,255,255,0.9)" : "rgba(13,17,23,0.9)" },
+    error:   { bg: "rgba(239,68,68,0.1)",  border: "rgba(239,68,68,0.4)",  text: "rgba(239,68,68,0.8)" },
     pending: { bg: "rgba(251,191,36,0.1)", border: "rgba(251,191,36,0.4)", text: "rgba(251,191,36,0.8)" },
   };
 
   const connectionColors = {
-    disconnected: "rgba(255,255,255,0.06)",
+    disconnected: `rgba(${ink},0.08)`,
     error: "rgba(239,68,68,0.4)",
     connecting: "rgba(251,191,36,0.5)",
     connected: "rgba(42,62,244,0.6)",
@@ -108,8 +123,8 @@ export function HeroSystemDiagram() {
         className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
+            linear-gradient(rgba(${ink},0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(${ink},0.03) 1px, transparent 1px)
           `,
           backgroundSize: "32px 32px",
         }}
@@ -281,7 +296,7 @@ export function HeroSystemDiagram() {
                 ? "#22c55e"
                 : systemState === "diagnosing" || systemState === "connecting"
                 ? "#fbbf24"
-                : "rgba(255,255,255,0.3)",
+                : `rgba(${ink},0.35)`,
           }}
           style={{ borderRadius: "50%" }}
         >
@@ -297,7 +312,7 @@ export function HeroSystemDiagram() {
             />
           )}
         </motion.span>
-        <span className="font-mono text-[0.6rem] uppercase tracking-wider text-white/50">
+        <span className="font-mono text-[0.6rem] uppercase tracking-wider" style={{ color: `rgba(${ink},0.5)` }}>
           {systemState === "disconnected" && "Systems disconnected"}
           {systemState === "diagnosing" && "Diagnosing friction"}
           {systemState === "connecting" && "Establishing connections"}

@@ -10,7 +10,7 @@ export function HeroSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-brand-ink text-white">
+    <section className="relative min-h-screen overflow-hidden bg-[var(--bg)] text-white">
       {/* Background layers */}
       <div className="absolute inset-0 tech-grid opacity-60" />
 
@@ -18,8 +18,8 @@ export function HeroSection() {
       <div className="absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
       <div className="absolute -right-32 top-1/3 h-80 w-80 rounded-full bg-brand-sky/8 blur-[100px]" />
 
-      {/* Content — full bleed, no max-width container */}
-      <div className="relative w-full px-4 pt-32 pb-10 sm:px-6 sm:pt-36 lg:px-12 lg:pt-40 lg:pb-14 xl:px-20">
+      {/* Content */}
+      <div className="relative section-shell pt-32 pb-10 sm:pt-36 lg:pt-40 lg:pb-14">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           {/* Left: Copy */}
           <div>
@@ -156,8 +156,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-ink to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32" style={{ background: "linear-gradient(to top, var(--bg), transparent)" }} />
     </section>
   );
 }

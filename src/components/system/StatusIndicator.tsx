@@ -52,7 +52,7 @@ export function StatusIndicator({ status, label, size = "md" }: StatusIndicatorP
           className={`font-mono uppercase tracking-wider ${
             size === "sm" ? "text-[0.6rem]" : "text-[0.65rem]"
           }`}
-          style={{ color: "rgba(255,255,255,0.5)" }}
+          style={{ color: "var(--fg-muted)" }}
         >
           {label || config.label}
         </span>

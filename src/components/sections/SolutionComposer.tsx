@@ -240,7 +240,7 @@ export function SolutionComposer() {
   const active = modes.find((m) => m.id === activeId)!;
 
   return (
-    <section id="solutions" className="relative overflow-hidden bg-brand-ink py-14 lg:py-20">
+    <section id="solutions" className="relative overflow-hidden bg-[var(--bg)] py-14 lg:py-20">
       <div className="absolute inset-0 tech-grid opacity-25" />
       <div className="absolute right-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full bg-brand-sky/[0.03] blur-[100px]" />
 

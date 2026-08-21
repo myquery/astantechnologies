@@ -5,8 +5,10 @@ import { AppConfig } from '../utils/AppConfig';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang={AppConfig.locale}>
+      <Html lang={AppConfig.locale} data-theme="dark">
         <Head>
+          {/* Prevent theme flash on load */}
+          <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();` }} />
           {/* Google Search Console */}
           <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION || ''} />
 
