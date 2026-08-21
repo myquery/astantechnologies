@@ -23,7 +23,7 @@ export default function BlogIndexPage() {
         />
       </Head>
 
-      <div className="min-h-screen bg-brand-paper text-slate-900">
+      <div className="min-h-screen" style={{ background: 'var(--bg)' }}>
         <Navigation />
 
         <main id="top" className="pt-32">
@@ -72,7 +72,7 @@ export default function BlogIndexPage() {
           </section>
 
           {/* Filter tabs + grid */}
-          <section className="bg-brand-paper py-16 sm:py-20">
+          <section className="py-16 sm:py-20" style={{ background: 'var(--bg-surface)' }}>
             <div className="section-shell">
               {/* Tabs */}
               <div className="flex flex-wrap gap-2 mb-10">
@@ -83,7 +83,7 @@ export default function BlogIndexPage() {
                     className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
                       active === key
                         ? "border-primary bg-primary text-white"
-                        : "border-slate-200 bg-white text-slate-600 hover:border-primary/40 hover:text-primary"
+                        : "border-white/10 bg-white/5 text-slate-300 hover:border-primary/40 hover:text-white"
                     }`}
                   >
                     {key === ALL ? "All articles" : PILLARS[key as Pillar].label}
@@ -97,31 +97,31 @@ export default function BlogIndexPage() {
                   return (
                     <article
                       key={article.href}
-                      className="flex flex-col rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_20px_70px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_28px_88px_rgba(15,23,42,0.1)] sm:p-7"
+                      className="flex flex-col rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06] sm:p-7"
                     >
                       <div className="flex items-center justify-between gap-3 mb-4">
-                        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+                        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-sky">
                           {article.category}
                         </p>
                         {isExternal && (
-                          <span className="rounded-full border border-slate-200 bg-brand-paper px-2 py-1 text-[0.65rem] font-medium text-slate-500">
+                          <span className="rounded-full border border-white/10 bg-white/5 px-2 py-1 text-[0.65rem] font-medium text-slate-400">
                             Medium
                           </span>
                         )}
                       </div>
-                      <h2 className="font-display text-xl font-semibold tracking-[-0.03em] text-slate-950 flex-1">
+                      <h2 className="font-display text-xl font-semibold tracking-[-0.03em] text-white flex-1">
                         {article.title}
                       </h2>
-                      <p className="mt-3 text-sm leading-7 text-slate-600">
+                      <p className="mt-3 text-sm leading-7 text-slate-400">
                         {article.description}
                       </p>
                       <div className="mt-4 flex items-center justify-between">
-                        <time className="text-xs text-slate-400">{article.date}</time>
+                        <time className="text-xs text-slate-500">{article.date}</time>
                         <a
                           href={article.href}
                           target={isExternal ? "_blank" : undefined}
                           rel={isExternal ? "noreferrer" : undefined}
-                          className="inline-flex items-center text-sm font-semibold text-slate-900 transition hover:text-primary"
+                          className="inline-flex items-center text-sm font-semibold text-white transition hover:text-brand-sky"
                         >
                           Read article
                           <span className="ml-2" aria-hidden="true">
