@@ -439,7 +439,7 @@ export function FrictionSection() {
 
         {/* Bottom CTA nudge */}
         <Reveal delay={0.2}>
-          <div className="mt-16 flex items-center gap-4 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6">
+          <div className="mt-16 flex flex-col gap-4 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:flex-row sm:items-center">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-primary/30 bg-primary/10">
               <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -449,7 +449,7 @@ export function FrictionSection() {
               <p className="text-sm font-medium text-white/80">Recognise any of these patterns?</p>
               <p className="mt-0.5 text-sm text-white/50">Astan diagnoses the root cause and designs the right solution — not just the obvious one.</p>
             </div>
-            <a href="#contact" className="shrink-0 primary-button text-sm">
+            <a href="#contact" className="w-full sm:w-auto shrink-0 primary-button text-sm text-center">
               Let's diagnose it
             </a>
           </div>
