@@ -302,10 +302,18 @@ export function CapabilitiesSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="flex h-full min-h-[200px] items-center justify-center rounded-2xl border border-dashed border-white/[0.06]"
+                  className="flex h-full min-h-[200px] flex-col items-center justify-center rounded-2xl border border-dashed border-white/[0.06] p-6 text-center"
                 >
-                  <p className="font-mono text-[0.65rem] uppercase tracking-wider text-white/20">
-                    Select a node to explore
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.04]">
+                    <svg className="h-6 w-6 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                    </svg>
+                  </div>
+                  <p className="font-display text-sm font-medium text-white/50">
+                    Select a capability node
+                  </p>
+                  <p className="mt-2 max-w-xs text-xs leading-relaxed text-white/30">
+                    Click on any node in the diagram to explore our technical capabilities and the services included in each area.
                   </p>
                 </motion.div>
               )}
