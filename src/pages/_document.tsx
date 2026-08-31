@@ -99,6 +99,13 @@ class MyDocument extends Document {
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { page_path: window.location.pathname });`
           }} />
+
+          {/* Google AdSense */}
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8543295677573797"
+            crossOrigin="anonymous"
+          />
         </Head>
         <body>
           {/* GTM noscript fallback */}
